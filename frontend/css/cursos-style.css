@@ -1,4 +1,4 @@
-    /* ===== Reset & Base ===== */
+    /*  Reset & Base  */
     *,
     *::before,
     *::after {
@@ -34,7 +34,7 @@
         -webkit-font-smoothing: antialiased;
     }
 
-    /* ===== Header / Nav ===== */
+    /*  Header / Nav  */
     header {
         background: var(--surface);
         position: sticky;
@@ -136,7 +136,7 @@
         transform: translateY(-1px);
     }
 
-    /* ===== Main / Courses ===== */
+    /*  Main / Courses  */
     .courses-section {
         max-width: 1200px;
         margin: 0 auto;
@@ -268,7 +268,7 @@
         margin-top: 8px;
     }
 
-    /* ===== Footer ===== */
+    /*  Footer  */
     footer {
         background: var(--footer-bg);
         text-align: center;
@@ -385,7 +385,7 @@
         transition: color 0.2s;
     }
 
-    /* ===== Responsive ===== */
+    /*  Responsive  */
     @media (max-width: 900px) {
         .cursos-grid {
             grid-template-columns: repeat(2, 1fr);
@@ -415,7 +415,7 @@
         }
     }
 
-    /* ===== Fade-in Animation ===== */
+    /*  Fade-in Animation  */
     @keyframes fadeUp {
         from {
             opacity: 0;
