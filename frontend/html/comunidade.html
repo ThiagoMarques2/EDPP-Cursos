@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edpp — Comunidade</title>
+  <link rel="stylesheet" href="../css/comunidade.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--  CABEÇALHO / NAVEGAÇÃO  -->
+  <header class="site-header">
+    <nav class="header-nav">
+      <a href="index.html" class="logo">Ed<span>pp</span></a>
+      <ul class="links-nav">
+        <li><a href="index.html">Explorar</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="#">Professores</a></li>
+        <li><a href="comunidade.html" class="ativo">Comunidade</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+      <section class="acoes-header">
+        <button class="btn-pesquisa" aria-label="Pesquisar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="btn-carrinho" aria-label="Planos" onclick="document.getElementById('modalPlanos').showModal()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </button>
+        <button class="btn-acao">Comece a Aprender</button>
+      </section>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--  HERO  -->
+    <section class="comunidade-hero">
+      <article class="comunidade-hero-interno">
+        <h1>Nossa <span>Comunidade</span></h1>
+        <p>Um espaço para aprender junto, trocar experiências e crescer com milhares de estudantes e especialistas do Brasil inteiro.</p>
+        <a href="https://discord.gg/seu-servidor" target="_blank" rel="noopener noreferrer" class="btn-entrar-comunidade">Participar Agora</a>
+      </article>
+    </section>
+
+    <!--  ESTATÍSTICAS  -->
+    <section class="estatisticas">
+      <article class="secao-interna">
+        <ul class="estatisticas-lista">
+          <li class="estatistica-card">
+            <span class="estatistica-valor">15k+</span>
+            <span class="estatistica-rotulo">Membros ativos</span>
+          </li>
+          <li class="estatistica-card">
+            <span class="estatistica-valor">3.2k</span>
+            <span class="estatistica-rotulo">Discussões abertas</span>
+          </li>
+          <li class="estatistica-card">
+            <span class="estatistica-valor">890</span>
+            <span class="estatistica-rotulo">Respostas hoje</span>
+          </li>
+          <li class="estatistica-card">
+            <span class="estatistica-valor">98%</span>
+            <span class="estatistica-rotulo">Satisfação geral</span>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!--  DISCUSSÕES EM DESTAQUE  -->
+    <section class="discussoes">
+      <article class="secao-interna">
+        <header class="secao-header-centro">
+          <figure class="secao-icone">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C94C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </figure>
+          <h2>Discussões em Destaque</h2>
+          <p>Os tópicos mais ativos da semana</p>
+        </header>
+        <ul class="discussoes-lista">
+
+          <!-- Card: Discussão 1 -->
+          <li class="discussao-card">
+            <section class="discussao-topo">
+              <figure class="discussao-avatar" style="background:#3B82F6">MS</figure>
+              <section class="discussao-info">
+                <strong>Maria Santos</strong>
+                <span>Tecnologia · há 2 horas</span>
+              </section>
+              <span class="discussao-etiqueta discussao-etiqueta--quente">🔥 Em alta</span>
+            </section>
+            <h3 class="discussao-titulo">Qual a melhor forma de aprender Java do zero em 2025?</h3>
+            <p class="discussao-preview">Estou começando agora e não sei por onde começar. Alguém tem um roteiro de estudos que funcionou bem?</p>
+            <footer class="discussao-rodape">
+              <span>💬 48 respostas</span>
+              <span>👍 132 curtidas</span>
+              <span>👁 1.2k visualizações</span>
+            </footer>
+          </li>
+
+          <!-- Card: Discussão 2 -->
+          <li class="discussao-card">
+            <section class="discussao-topo">
+              <figure class="discussao-avatar" style="background:#10B981">AC</figure>
+              <section class="discussao-info">
+                <strong>Ana Costa</strong>
+                <span>Marketing · há 5 horas</span>
+              </section>
+              <span class="discussao-etiqueta discussao-etiqueta--respondida">✓ Respondida</span>
+            </section>
+            <h3 class="discussao-titulo">Como criar uma estratégia de conteúdo para redes sociais?</h3>
+            <p class="discussao-preview">Preciso montar um calendário editorial para uma pequena empresa. Quais ferramentas vocês recomendam?</p>
+            <footer class="discussao-rodape">
+              <span>💬 31 respostas</span>
+              <span>👍 87 curtidas</span>
+              <span>👁 940 visualizações</span>
+            </footer>
+          </li>
+
+          <!-- Card: Discussão 3 -->
+          <li class="discussao-card">
+            <section class="discussao-topo">
+              <figure class="discussao-avatar" style="background:#6366F1">RP</figure>
+              <section class="discussao-info">
+                <strong>Rafael Pinto</strong>
+                <span>Design · há 1 dia</span>
+              </section>
+              <span class="discussao-etiqueta discussao-etiqueta--novo">✦ Novo</span>
+            </section>
+            <h3 class="discussao-titulo">Figma vs Adobe XD: qual usar em 2025?</h3>
+            <p class="discussao-preview">Estou migrando para design de interfaces e quero saber a opinião de quem já usa as duas ferramentas no dia a dia.</p>
+            <footer class="discussao-rodape">
+              <span>💬 19 respostas</span>
+              <span>👍 64 curtidas</span>
+              <span>👁 720 visualizações</span>
+            </footer>
+          </li>
+
+          <!-- Card: Discussão 4 -->
+          <li class="discussao-card">
+            <section class="discussao-topo">
+              <figure class="discussao-avatar" style="background:#F59E0B">FL</figure>
+              <section class="discussao-info">
+                <strong>Fernanda Lima</strong>
+                <span>Negócios · há 2 dias</span>
+              </section>
+              <span class="discussao-etiqueta discussao-etiqueta--respondida">✓ Respondida</span>
+            </section>
+            <h3 class="discussao-titulo">Como montar um portfólio de gestão de projetos?</h3>
+            <p class="discussao-preview">Terminei o curso e quero mostrar meu trabalho para recrutadores. Quais projetos incluir mesmo sem experiência formal?</p>
+            <footer class="discussao-rodape">
+              <span>💬 25 respostas</span>
+              <span>👍 91 curtidas</span>
+              <span>👁 830 visualizações</span>
+            </footer>
+          </li>
+
+          <!-- Card: Discussão 5 -->
+          <li class="discussao-card">
+            <section class="discussao-topo">
+              <figure class="discussao-avatar" style="background:#EF4444">JS</figure>
+              <section class="discussao-info">
+                <strong>João Silva</strong>
+                <span>Ciências · há 3 dias</span>
+              </section>
+              <span class="discussao-etiqueta discussao-etiqueta--quente">🔥 Em alta</span>
+            </section>
+            <h3 class="discussao-titulo">Dicas para memorizar reações químicas orgânicas</h3>
+            <p class="discussao-preview">Tenho dificuldade em lembrar os mecanismos de reação. Alguém tem alguma técnica de memorização que funcione?</p>
+            <footer class="discussao-rodape">
+              <span>💬 37 respostas</span>
+              <span>👍 110 curtidas</span>
+              <span>👁 1.5k visualizações</span>
+            </footer>
+          </li>
+
+          <!-- Card: Discussão 6 -->
+          <li class="discussao-card">
+            <section class="discussao-topo">
+              <figure class="discussao-avatar" style="background:#A855F7">CO</figure>
+              <section class="discussao-info">
+                <strong>Carlos Oliveira</strong>
+                <span>Arte · há 4 dias</span>
+              </section>
+              <span class="discussao-etiqueta discussao-etiqueta--novo">✦ Novo</span>
+            </section>
+            <h3 class="discussao-titulo">Princípios de tipografia que todo designer precisa saber</h3>
+            <p class="discussao-preview">Separei os 5 princípios que mais uso no dia a dia e que fazem diferença real nos projetos. Vem ver!</p>
+            <footer class="discussao-rodape">
+              <span>💬 14 respostas</span>
+              <span>👍 78 curtidas</span>
+              <span>👁 610 visualizações</span>
+            </footer>
+          </li>
+
+        </ul>
+      </article>
+    </section>
+
+    <!--  MEMBROS EM DESTAQUE  -->
+    <section class="membros">
+      <article class="secao-interna">
+        <header class="secao-header-centro">
+          <figure class="secao-icone">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C94C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </figure>
+          <h2>Membros em Destaque</h2>
+          <p>Quem mais contribui com a comunidade este mês</p>
+        </header>
+        <ul class="membros-lista">
+
+          <!-- Card: Membro 1 -->
+          <li class="membro-card">
+            <figure class="membro-avatar" style="background:#3B82F6">MS</figure>
+            <h3>Maria Santos</h3>
+            <p class="membro-area">Tecnologia</p>
+            <ul class="membro-stats">
+              <li><span class="stat-numero">142</span><span class="stat-rotulo">Respostas</span></li>
+              <li><span class="stat-numero">4.9★</span><span class="stat-rotulo">Avaliação</span></li>
+            </ul>
+            <span class="membro-medalha">🥇 Top Contribuidor</span>
+          </li>
+
+          <!-- Card: Membro 2 -->
+          <li class="membro-card">
+            <figure class="membro-avatar" style="background:#10B981">AC</figure>
+            <h3>Ana Costa</h3>
+            <p class="membro-area">Marketing</p>
+            <ul class="membro-stats">
+              <li><span class="stat-numero">98</span><span class="stat-rotulo">Respostas</span></li>
+              <li><span class="stat-numero">4.8★</span><span class="stat-rotulo">Avaliação</span></li>
+            </ul>
+            <span class="membro-medalha">🥈 Destaque do Mês</span>
+          </li>
+
+          <!-- Card: Membro 3 -->
+          <li class="membro-card">
+            <figure class="membro-avatar" style="background:#6366F1">RP</figure>
+            <h3>Rafael Pinto</h3>
+            <p class="membro-area">Design</p>
+            <ul class="membro-stats">
+              <li><span class="stat-numero">76</span><span class="stat-rotulo">Respostas</span></li>
+              <li><span class="stat-numero">4.7★</span><span class="stat-rotulo">Avaliação</span></li>
+            </ul>
+            <span class="membro-medalha">🥉 Muito Ativo</span>
+          </li>
+
+          <!-- Card: Membro 4 -->
+          <li class="membro-card">
+            <figure class="membro-avatar" style="background:#F59E0B">FL</figure>
+            <h3>Fernanda Lima</h3>
+            <p class="membro-area">Negócios</p>
+            <ul class="membro-stats">
+              <li><span class="stat-numero">61</span><span class="stat-rotulo">Respostas</span></li>
+              <li><span class="stat-numero">4.6★</span><span class="stat-rotulo">Avaliação</span></li>
+            </ul>
+            <span class="membro-medalha">⭐ Colaborador</span>
+          </li>
+
+        </ul>
+      </article>
+    </section>
+
+
+
+  </main>
+
+  <!--  RODAPÉ  -->
+  <footer class="rodape">
+    <section class="rodape-interno">
+      <p class="titulo-redes">Redes Sociais</p>
+      <nav class="rodape__redes" aria-label="Redes sociais">
+        <a href="#" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+      </nav>
+      <p class="rodape__base">&copy; 2026 Ensino digital para preparação profissional. Todos os direitos reservados.</p>
+    </section>
+  </footer>
+
+  <!--  MODAL: PLANOS  -->
+  <dialog id="modalPlanos" class="modal modal-planos" onclick="if(event.target===this)this.close()">
+    <article class="planos-conteudo">
+      <button class="planos-fechar" onclick="document.getElementById('modalPlanos').close()">&times;</button>
+      <h2 class="planos-titulo">Escolha seu Plano</h2>
+      <p class="planos-sub">Invista no seu conhecimento. Cancele quando quiser.</p>
+      <section class="planos-grade">
+        <article class="plano-card">
+          <h3>Básico</h3>
+          <p class="plano-descricao">Ideal para começar</p>
+          <p class="plano-preco"><span class="plano-cifrao">R$</span>29<span class="plano-mes">/mês</span></p>
+          <ul class="plano-recursos">
+            <li><span class="check">✓</span> Acesso a 10 cursos</li>
+            <li><span class="check">✓</span> Certificados digitais</li>
+            <li><span class="check">✓</span> Suporte por e-mail</li>
+            <li><span class="check check--inativo">✓</span> Cursos exclusivos</li>
+            <li><span class="check check--inativo">✓</span> Mentorias ao vivo</li>
+          </ul>
+          <button class="plano-btn plano-btn--contorno">Assinar Plano</button>
+        </article>
+        <article class="plano-card plano-card--pro">
+          <p class="plano-destaque">👑 MAIS POPULAR</p>
+          <h3>Pro</h3>
+          <p class="plano-descricao">Para quem quer evoluir rápido</p>
+          <p class="plano-preco"><span class="plano-cifrao">R$</span>59<span class="plano-mes">/mês</span></p>
+          <ul class="plano-recursos">
+            <li><span class="check">✓</span> Acesso a todos os cursos</li>
+            <li><span class="check">✓</span> Certificados digitais</li>
+            <li><span class="check">✓</span> Suporte prioritário</li>
+            <li><span class="check">✓</span> Cursos exclusivos</li>
+            <li><span class="check check--inativo">✓</span> Mentorias ao vivo</li>
+          </ul>
+          <button class="plano-btn plano-btn--pro">Assinar Plano</button>
+        </article>
+        <article class="plano-card">
+          <h3>Premium</h3>
+          <p class="plano-descricao">Experiência completa</p>
+          <p class="plano-preco"><span class="plano-cifrao">R$</span>99<span class="plano-mes">/mês</span></p>
+          <ul class="plano-recursos">
+            <li><span class="check">✓</span> Acesso a todos os cursos</li>
+            <li><span class="check">✓</span> Certificados digitais</li>
+            <li><span class="check">✓</span> Suporte 24/7</li>
+            <li><span class="check">✓</span> Cursos exclusivos</li>
+            <li><span class="check">✓</span> Mentorias ao vivo</li>
+          </ul>
+          <button class="plano-btn plano-btn--contorno">Assinar Plano</button>
+        </article>
+      </section>
+    </article>
+  </dialog>
+
+  <!--  MODAL: ENTRAR  -->
+  <dialog id="modalEntrar" class="modal">
+    <article class="modal-conteudo">
+      <h2>Entrar</h2>
+      <p>Acesse sua conta para continuar</p>
+      <label for="entrarIdentificador">E-mail ou CPF</label>
+      <input id="entrarIdentificador" type="text" placeholder="Insira seu e-mail ou CPF">
+      <label for="entrarSenha">Senha</label>
+      <input id="entrarSenha" type="password" placeholder="Insira sua senha">
+      <label for="entrarTipoUsuario">Tipo de usuário</label>
+      <select name="tipoUsuario" id="entrarTipoUsuario">
+        <option value="">Tipo de usuário</option>
+        <option value="aluno">Aluno</option>
+        <option value="professor">Professor</option>
+      </select>
+      <button class="btn-entrar">Entrar</button>
+      <p class="pequeno">Não tem conta? <span class="link-cadastro">Criar conta</span></p>
+    </article>
+  </dialog>
+
+  <!--  MODAL: CRIAR CONTA  -->
+  <dialog id="modalCadastro" class="modal">
+    <article class="modal-conteudo">
+      <h2>Criar Conta</h2>
+      <p>Preencha os campos abaixo para criar sua conta</p>
+      <label for="cadastroNome">Nome</label>
+      <input id="cadastroNome" type="text" placeholder="Insira seu nome completo">
+      <label for="cadastroEmail">E-mail</label>
+      <input id="cadastroEmail" type="email" placeholder="Insira seu e-mail">
+      <label for="cadastroCpf">CPF</label>
+      <input id="cadastroCpf" type="text" placeholder="Insira seu CPF">
+      <label for="cadastroSenha">Senha</label>
+      <input id="cadastroSenha" type="password" placeholder="Insira sua senha">
+      <label for="cadastroTipoUsuario">Tipo de usuário</label>
+      <select name="tipoUsuario" id="cadastroTipoUsuario">
+        <option value="">Tipo de usuário</option>
+        <option value="aluno">Aluno</option>
+        <option value="professor">Professor</option>
+      </select>
+      <button class="btn-cadastrar">Criar Conta</button>
+      <p class="pequeno">Já tem conta? <span class="link-entrar">Entrar</span></p>
+    </article>
+  </dialog>
+
+  <!--  SCRIPTS  -->
+  <script src="../js/login-signup.js"></script>
+
+</body>
+</html>
