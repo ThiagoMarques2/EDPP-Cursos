@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edpp — Sobre</title>
+  <link rel="stylesheet" href="../css/sobre.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--  CABEÇALHO / NAVEGAÇÃO  -->
+  <header class="site-header">
+    <nav class="header-nav">
+      <a href="index.html" class="logo">Ed<span>pp</span></a>
+      <ul class="links-nav">
+        <li><a href="index.html">Explorar</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="#">Professores</a></li>
+        <li><a href="comunidade.html">Comunidade</a></li>
+        <li><a href="sobre.html" class="ativo">Sobre</a></li>
+      </ul>
+      <section class="acoes-header">
+        <button class="btn-pesquisa" aria-label="Pesquisar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="btn-carrinho" aria-label="Planos" onclick="document.getElementById('modalPlanos').showModal()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </button>
+        <button class="btn-acao">Comece a Aprender</button>
+      </section>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--  HERO  -->
+    <section class="sobre-hero">
+      <article class="sobre-hero-interno">
+        <h1>Sobre o <span>Edpp</span></h1>
+        <p>Acreditamos que o conhecimento transforma vidas. Nossa missão é tornar o aprendizado acessível, prático e inspirador para todos.</p>
+      </article>
+    </section>
+
+    <!--  MISSÃO / VISÃO / OBJETIVO  -->
+    <section class="triade">
+      <article class="secao-interna">
+        <header class="secao-header-centro">
+          <h2>Nossos Pilares</h2>
+          <p>Os valores que guiam cada decisão que tomamos</p>
+        </header>
+        <section class="triade-grade">
+
+          <!-- Card: Missão -->
+          <article class="triade-card">
+            <figure class="triade-icone">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C94C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            </figure>
+            <h3>Missão</h3>
+            <p>Democratizar o acesso ao conhecimento de qualidade, conectando estudantes aos melhores especialistas do mercado de forma simples e acessível.</p>
+          </article>
+
+          <!-- Card: Visão -->
+          <article class="triade-card triade-card--destaque">
+            <figure class="triade-icone">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C94C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </figure>
+            <h3>Visão</h3>
+            <p>Ser a principal plataforma de educação digital do Brasil, reconhecida pela excelência dos conteúdos e pelo impacto positivo na vida dos nossos alunos.</p>
+          </article>
+
+          <!-- Card: Objetivo -->
+          <article class="triade-card">
+            <figure class="triade-icone">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C94C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21h6M12 3a7 7 0 0 0-4 12c.5.5 1 1.5 1 2h6c0-.5.5-1.5 1-2a7 7 0 0 0-4-12z"/></svg>
+            </figure>
+            <h3>Objetivo</h3>
+            <p>Oferecer cursos práticos e atualizados que preparem nossos alunos para os desafios reais do mercado, com suporte contínuo e certificação reconhecida.</p>
+          </article>
+
+        </section>
+      </article>
+    </section>
+
+    <!--  NOSSA HISTÓRIA  -->
+    <section class="historia">
+      <article class="historia-interna">
+        <header class="secao-header-centro">
+          <figure class="historia-icone">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C94C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </figure>
+          <h2>Nossa História</h2>
+          <p>De uma ideia simples a uma plataforma que transforma vidas</p>
+        </header>
+        <section class="historia-texto">
+          <p>O Edpp nasceu em 2021 a partir de uma pergunta simples: por que o ensino de qualidade ainda é privilégio de poucos? Um grupo de educadores e desenvolvedores se reuniu com o objetivo de mudar essa realidade, criando uma plataforma onde qualquer pessoa pudesse aprender com os melhores profissionais do mercado.</p>
+          <p>Nos primeiros meses, lançamos apenas 5 cursos. A resposta foi surpreendente: em menos de 6 meses, mais de 2.000 alunos já haviam se matriculado. Esse resultado nos mostrou que estávamos no caminho certo e nos motivou a expandir o catálogo, melhorar a experiência e investir em tecnologia.</p>
+          <p>Hoje, o Edpp conta com mais de 50 cursos, 9 professores especialistas e uma comunidade ativa de mais de 15.000 alunos em todo o Brasil. Continuamos crescendo, mas nossa essência permanece a mesma: acreditar que o conhecimento é o maior investimento que uma pessoa pode fazer.</p>
+        </section>
+
+        <!--  NÚMEROS  -->
+        <section class="numeros-grade">
+          <article class="numero-card">
+            <span class="numero-valor">15k+</span>
+            <span class="numero-rotulo">Alunos</span>
+          </article>
+          <article class="numero-card">
+            <span class="numero-valor">50+</span>
+            <span class="numero-rotulo">Cursos</span>
+          </article>
+          <article class="numero-card">
+            <span class="numero-valor">9</span>
+            <span class="numero-rotulo">Professores</span>
+          </article>
+          <article class="numero-card">
+            <span class="numero-valor">4.8★</span>
+            <span class="numero-rotulo">Avaliação Média</span>
+          </article>
+        </section>
+
+      </article>
+    </section>
+
+    <!--  NOSSA EQUIPE  -->
+    <section class="equipe">
+      <article class="secao-interna">
+        <header class="secao-header-centro">
+          <figure class="historia-icone">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C94C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </figure>
+          <h2>Nossa Equipe</h2>
+          <p>As pessoas por trás da plataforma que transforma vidas</p>
+        </header>
+        <section class="equipe-grade">
+
+          <!-- Card: Lucas Souza -->
+          <article class="equipe-card">
+            <figure class="equipe-avatar" style="background:#3B82F6">LS</figure>
+            <h3>Lucas Souza</h3>
+            <p class="equipe-cargo">CEO & Co-fundador</p>
+            <p class="equipe-bio">Educador apaixonado com 10 anos de experiência em tecnologia educacional. Acredita que o aprendizado deve ser acessível a todos.</p>
+          </article>
+
+          <!-- Card: Camila Martins -->
+          <article class="equipe-card">
+            <figure class="equipe-avatar" style="background:#D946EF">CM</figure>
+            <h3>Camila Martins</h3>
+            <p class="equipe-cargo">CTO & Co-fundadora</p>
+            <p class="equipe-bio">Engenheira de software com foco em experiência do usuário. Responsável por toda a arquitetura técnica da plataforma.</p>
+          </article>
+
+          <!-- Card: Rafael Pinto -->
+          <article class="equipe-card">
+            <figure class="equipe-avatar" style="background:#6366F1">RP</figure>
+            <h3>Rafael Pinto</h3>
+            <p class="equipe-cargo">Head de Conteúdo</p>
+            <p class="equipe-bio">Pedagogo e especialista em design instrucional. Garante que cada curso entregue uma experiência de aprendizado excepcional.</p>
+          </article>
+
+          <!-- Card: Juliana Oliveira -->
+          <article class="equipe-card">
+            <figure class="equipe-avatar" style="background:#F59E0B">JO</figure>
+            <h3>Juliana Oliveira</h3>
+            <p class="equipe-cargo">Head de Marketing</p>
+            <p class="equipe-bio">Especialista em growth e marketing digital. Responsável por conectar o Edpp a milhares de novos alunos todos os meses.</p>
+          </article>
+
+          <!-- Card: Bruno Ferreira -->
+          <article class="equipe-card">
+            <figure class="equipe-avatar" style="background:#10B981">BF</figure>
+            <h3>Bruno Ferreira</h3>
+            <p class="equipe-cargo">Head de Parcerias</p>
+            <p class="equipe-bio">Responsável por trazer os melhores professores e especialistas para a plataforma, garantindo qualidade e diversidade de conteúdo.</p>
+          </article>
+
+          <!-- Card: Tatiane Nunes -->
+          <article class="equipe-card">
+            <figure class="equipe-avatar" style="background:#A855F7">TN</figure>
+            <h3>Tatiane Nunes</h3>
+            <p class="equipe-cargo">Head de Suporte</p>
+            <p class="equipe-bio">Garante que cada aluno tenha a melhor experiência possível, liderando um time dedicado ao sucesso do estudante.</p>
+          </article>
+
+        </section>
+      </article>
+    </section>
+
+  </main>
+
+  <!--  RODAPÉ  -->
+  <footer class="rodape">
+    <section class="rodape-interno">
+      <p class="titulo-redes">Redes Sociais</p>
+      <nav class="rodape__redes" aria-label="Redes sociais">
+        <a href="#" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+      </nav>
+      <p class="rodape__base">&copy; 2026 Ensino digital para preparação profissional. Todos os direitos reservados.</p>
+    </section>
+  </footer>
+
+  <!--  MODAL: PLANOS  -->
+  <dialog id="modalPlanos" class="modal modal-planos" onclick="if(event.target===this)this.close()">
+    <article class="planos-conteudo">
+      <button class="planos-fechar" onclick="document.getElementById('modalPlanos').close()">&times;</button>
+      <h2 class="planos-titulo">Escolha seu Plano</h2>
+      <p class="planos-sub">Invista no seu conhecimento. Cancele quando quiser.</p>
+      <section class="planos-grade">
+        <article class="plano-card">
+          <h3>Básico</h3>
+          <p class="plano-descricao">Ideal para começar</p>
+          <p class="plano-preco"><span class="plano-cifrao">R$</span>29<span class="plano-mes">/mês</span></p>
+          <ul class="plano-recursos">
+            <li><span class="check">✓</span> Acesso a 10 cursos</li>
+            <li><span class="check">✓</span> Certificados digitais</li>
+            <li><span class="check">✓</span> Suporte por e-mail</li>
+            <li><span class="check check--inativo">✓</span> Cursos exclusivos</li>
+            <li><span class="check check--inativo">✓</span> Mentorias ao vivo</li>
+          </ul>
+          <button class="plano-btn plano-btn--contorno">Assinar Plano</button>
+        </article>
+        <article class="plano-card plano-card--pro">
+          <p class="plano-destaque">👑 MAIS POPULAR</p>
+          <h3>Pro</h3>
+          <p class="plano-descricao">Para quem quer evoluir rápido</p>
+          <p class="plano-preco"><span class="plano-cifrao">R$</span>59<span class="plano-mes">/mês</span></p>
+          <ul class="plano-recursos">
+            <li><span class="check">✓</span> Acesso a todos os cursos</li>
+            <li><span class="check">✓</span> Certificados digitais</li>
+            <li><span class="check">✓</span> Suporte prioritário</li>
+            <li><span class="check">✓</span> Cursos exclusivos</li>
+            <li><span class="check check--inativo">✓</span> Mentorias ao vivo</li>
+          </ul>
+          <button class="plano-btn plano-btn--pro">Assinar Plano</button>
+        </article>
+        <article class="plano-card">
+          <h3>Premium</h3>
+          <p class="plano-descricao">Experiência completa</p>
+          <p class="plano-preco"><span class="plano-cifrao">R$</span>99<span class="plano-mes">/mês</span></p>
+          <ul class="plano-recursos">
+            <li><span class="check">✓</span> Acesso a todos os cursos</li>
+            <li><span class="check">✓</span> Certificados digitais</li>
+            <li><span class="check">✓</span> Suporte 24/7</li>
+            <li><span class="check">✓</span> Cursos exclusivos</li>
+            <li><span class="check">✓</span> Mentorias ao vivo</li>
+          </ul>
+          <button class="plano-btn plano-btn--contorno">Assinar Plano</button>
+        </article>
+      </section>
+    </article>
+  </dialog>
+
+  <!--  MODAL: ENTRAR  -->
+  <dialog id="modalEntrar" class="modal">
+    <article class="modal-conteudo">
+      <h2>Entrar</h2>
+      <p>Acesse sua conta para continuar</p>
+      <label for="entrarIdentificador">E-mail ou CPF</label>
+      <input id="entrarIdentificador" type="text" placeholder="Insira seu e-mail ou CPF">
+      <label for="entrarSenha">Senha</label>
+      <input id="entrarSenha" type="password" placeholder="Insira sua senha">
+      <label for="entrarTipoUsuario">Tipo de usuário</label>
+      <select name="tipoUsuario" id="entrarTipoUsuario">
+        <option value="">Tipo de usuário</option>
+        <option value="aluno">Aluno</option>
+        <option value="professor">Professor</option>
+      </select>
+      <button class="btn-entrar">Entrar</button>
+      <p class="pequeno">Não tem conta? <span class="link-cadastro">Criar conta</span></p>
+    </article>
+  </dialog>
+
+  <!--  MODAL: CRIAR CONTA  -->
+  <dialog id="modalCadastro" class="modal">
+    <article class="modal-conteudo">
+      <h2>Criar Conta</h2>
+      <p>Preencha os campos abaixo para criar sua conta</p>
+      <label for="cadastroNome">Nome</label>
+      <input id="cadastroNome" type="text" placeholder="Insira seu nome completo">
+      <label for="cadastroEmail">E-mail</label>
+      <input id="cadastroEmail" type="email" placeholder="Insira seu e-mail">
+      <label for="cadastroCpf">CPF</label>
+      <input id="cadastroCpf" type="text" placeholder="Insira seu CPF">
+      <label for="cadastroSenha">Senha</label>
+      <input id="cadastroSenha" type="password" placeholder="Insira sua senha">
+      <label for="cadastroTipoUsuario">Tipo de usuário</label>
+      <select name="tipoUsuario" id="cadastroTipoUsuario">
+        <option value="">Tipo de usuário</option>
+        <option value="aluno">Aluno</option>
+        <option value="professor">Professor</option>
+      </select>
+      <button class="btn-cadastrar">Criar Conta</button>
+      <p class="pequeno">Já tem conta? <span class="link-entrar">Entrar</span></p>
+    </article>
+  </dialog>
+
+  <!--  SCRIPTS  -->
+  <script src="../js/login-signup.js"></script>
+
+</body>
+</html>
