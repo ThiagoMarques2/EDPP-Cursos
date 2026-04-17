@@ -1,25 +1,39 @@
-const categoriaSelect = document.getElementById("categoria");
-const nivelSelect = document.getElementById("nivel");
-const cards = document.querySelectorAll(".curso-card");
+document.addEventListener("DOMContentLoaded", () => {
+  const categoriaSelect = document.getElementById("categoria");
+  const nivelSelect = document.getElementById("nivel");
 
-function filtrarCursos() {
-  const categoria = categoriaSelect.value;
-  const nivel = nivelSelect.value;
+  if (!categoriaSelect || !nivelSelect) return;
 
-  cards.forEach(card => {
-    const categorias = card.dataset.categoria.split(" ");
-    const cardNivel = card.dataset.nivel;
+  function filtrarCursos() {
+    const categoria = categoriaSelect.value;
+    const nivel = nivelSelect.value;
 
-    const matchCategoria = !categoria || categorias.includes(categoria);
-    const matchNivel = !nivel || nivel === cardNivel;
+    const cards = document.querySelectorAll(".curso-card");
 
-    if (matchCategoria && matchNivel) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
+    cards.forEach(card => {
+      const categorias = (card.dataset.categoria || "").split(" ");
+      const cardNivel = card.dataset.nivel;
+
+      const matchCategoria = !categoria || categorias.includes(categoria);
+      const matchNivel = !nivel || nivel === cardNivel;
+
+      card.classList.toggle("hidden", !(matchCategoria && matchNivel));
+    });
+  }
+
+  categoriaSelect.addEventListener("change", filtrarCursos);
+  nivelSelect.addEventListener("change", filtrarCursos);
+
+  // 🔥 importante: roda uma vez ao iniciar
+  filtrarCursos();
+
+  // 🔥 MUITO IMPORTANTE: observa mudanças no DOM (quando você volta dos detalhes)
+  const observer = new MutationObserver(() => {
+    filtrarCursos();
   });
-}
 
-categoriaSelect.addEventListener("change", filtrarCursos);
-nivelSelect.addEventListener("change", filtrarCursos);
+  observer.observe(document.querySelector("main"), {
+    childList: true,
+    subtree: true
+  });
+});
