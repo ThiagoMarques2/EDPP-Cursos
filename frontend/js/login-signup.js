@@ -1,51 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const loginDiv = document.getElementById("loginDiv");
-  const createDiv = document.getElementById("createAccountDiv");
+  const modalEntrar   = document.getElementById("modalEntrar");
+  const modalCadastro = document.getElementById("modalCadastro");
 
-  const openLogin = document.querySelector(".cta-btn");
-  const goToCreate = document.querySelector(".create-account-link");
-  const goToLogin = document.querySelector(".open-login");
+  // Abre modal de login ao clicar em "Comece a Aprender"
+  document.querySelector(".btn-acao")
+    ?.addEventListener("click", () => modalEntrar?.showModal());
 
-  // abre login
-  if (openLogin && loginDiv) {
-    openLogin.addEventListener("click", () => {
-      loginDiv.style.display = "flex";
+  // Login → Cadastro
+  document.querySelector(".link-cadastro")
+    ?.addEventListener("click", () => {
+      modalEntrar?.close();
+      modalCadastro?.showModal();
     });
-  }
 
-  // fechar login
-  if (loginDiv) {
-    loginDiv.addEventListener("click", (e) => {
-      if (e.target === loginDiv) {
-        loginDiv.style.display = "none";
-      }
+  // Cadastro → Login
+  document.querySelector(".link-entrar")
+    ?.addEventListener("click", () => {
+      modalCadastro?.close();
+      modalEntrar?.showModal();
     });
-  }
 
-  // fechar cadastro
-  if (createDiv) {
-    createDiv.addEventListener("click", (e) => {
-      if (e.target === createDiv) {
-        createDiv.style.display = "none";
-      }
+  // Fechar clicando fora (backdrop)
+  [modalEntrar, modalCadastro].forEach(modal => {
+    modal?.addEventListener("click", (e) => {
+      if (e.target === modal) modal.close();
     });
-  }
-
-  // login -> cadastro
-  if (goToCreate && loginDiv && createDiv) {
-    goToCreate.addEventListener("click", () => {
-      loginDiv.style.display = "none";
-      createDiv.style.display = "flex";
-    });
-  }
-
-  // cadastro -> login
-  if (goToLogin && loginDiv && createDiv) {
-    goToLogin.addEventListener("click", () => {
-      createDiv.style.display = "none";
-      loginDiv.style.display = "flex";
-    });
-  }
+  });
 
 });
