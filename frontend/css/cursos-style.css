@@ -1,4 +1,4 @@
-    /* ===== Reset & Base ===== */
+    /*  Reset & Base  */
     *,
     *::before,
     *::after {
@@ -34,7 +34,7 @@
         -webkit-font-smoothing: antialiased;
     }
 
-    /* ===== Header / Nav ===== */
+    /*  Header / Nav  */
     header {
         background: var(--surface);
         position: sticky;
@@ -165,7 +165,7 @@
         box-shadow: 0 4px 12px rgba(245, 197, 24, 0.35);
     }
 
-    /* ===== Main / Courses ===== */
+    /*  Main / Courses  */
     .courses-section {
         max-width: 1200px;
         margin: 0 auto;
@@ -321,7 +321,7 @@
         margin-top: 8px;
     }
 
-    /* ===== Footer ===== */
+    /*  Footer  */
     footer {
         background: var(--footer-bg);
         text-align: center;
@@ -395,7 +395,7 @@
         }
     }
 
-    /* ===== Fade-in Animation ===== */
+    /*  Fade-in Animation  */
     @keyframes fadeUp {
         from {
             opacity: 0;
