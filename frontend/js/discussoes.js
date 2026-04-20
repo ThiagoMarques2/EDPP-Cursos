@@ -21,7 +21,7 @@
     { nome: 'Patrícia Lima', cor: '#8B5CF6', tempo: 'há 7 h', texto: 'Que discussão rica! Já aprendi muito só lendo as respostas aqui.' },
   ];
 
-  // ---- Inicializa avatar e cor a partir do card ----
+  // ---- Inicializa avatar e cor a partir do card -----
   function dadosDoCard(card) {
     const avatar = card.querySelector('.discussao-avatar');
     const info = card.querySelector('.discussao-info');
