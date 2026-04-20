@@ -1,4 +1,4 @@
-/* ===== Reset & Base ===== */
+/* ===== Reset & Base ====== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -615,3 +615,4 @@ body {
   .links-nav { display: none; }
   .header-nav, .secao-interna, .comunidade-hero-interno, .comunidade-cta-interno { padding: 0 20px; }
 }
+
