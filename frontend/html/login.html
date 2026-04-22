@@ -226,15 +226,6 @@
 
 
   <script>
-    const btnDark = document.getElementById('btnDark');
-    const applyDark = (on) => {
-      document.body.classList.toggle('dark', on);
-      btnDark.textContent = on ? '☀️' : '🌙';
-      localStorage.setItem('edpp-dark', on ? '1' : '0');
-    };
-    applyDark(localStorage.getItem('edpp-dark') === '1');
-    btnDark.addEventListener('click', () => applyDark(!document.body.classList.contains('dark')));
-
 
     const paineis = { login: document.getElementById('painelLogin'), cadastro: document.getElementById('painelCadastro') };
 

@@ -426,6 +426,19 @@
   letter-spacing: 0.02em;
 }
 
+.cta-btn {
+  background: #f5c518;
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
 .review-meta {
   display: flex;
   flex-direction: column;
