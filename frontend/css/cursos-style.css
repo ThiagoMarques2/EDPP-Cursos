@@ -35,30 +35,26 @@
     }
 
     /*  Header / Nav  */
-    header {
+    .site-header {
         background: var(--surface);
         position: sticky;
         top: 0;
         z-index: 100;
-        border-bottom: 1px solid var(--border);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        padding: 16px 0;
     }
 
-    nav {
+    .header-nav {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 32px;
-        height: 68px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 24px;
     }
 
-    .hidden {
-        display: none !important;
-    }
-
-    .logo-text {
+    .logo {
         font-size: 1.45rem;
         font-weight: 800;
         color: var(--text);
@@ -67,63 +63,40 @@
         flex-shrink: 0;
     }
 
-    .logo-text span {
+    .logo span {
         color: var(--primary);
     }
 
-    .nav-links {
+    .links-nav {
         list-style: none;
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: 32px;
     }
 
-    .nav-links a {
-        position: relative;
+    .links-nav a {
         text-decoration: none;
         font-size: 0.875rem;
         font-weight: 500;
         color: var(--text-muted);
-        padding: 6px 12px;
-        border-radius: 8px;
-        transition: color 0.2s, background 0.2s;
+        padding-bottom: 4px;
+        transition: color 0.2s;
     }
 
-    .nav-links a::after {
-        content: '';
-        position: absolute;
-        bottom: -1px;
-        left: 12px;
-        right: 12px;
-        height: 2px;
-        background: var(--primary);
-        border-radius: 2px 2px 0 0;
-        transform: scaleX(0);
-        transition: transform 0.2s ease;
-    }
-
-    .nav-links a:hover {
+    .links-nav a:hover,
+    .links-nav a.ativo {
         color: var(--text);
-        background: var(--badge-bg);
+        border-bottom: 2px solid var(--primary);
     }
 
-    .nav-links a.active {
-        color: var(--text);
-        font-weight: 600;
-    }
-
-    .nav-links a.active::after {
-        transform: scaleX(1);
-    }
-
-    .nav-actions {
+    .acoes-header {
         display: flex;
         align-items: center;
         gap: 8px;
         flex-shrink: 0;
     }
 
-    .search-btn {
+    .btn-pesquisa {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -137,12 +110,12 @@
         transition: background 0.2s, color 0.2s;
     }
 
-    .search-btn:hover {
+    .btn-pesquisa:hover {
         background: var(--badge-bg);
         color: var(--text);
     }
 
-    .cta-btn {
+    .btn-acao {
         display: inline-flex;
         align-items: center;
         padding: 9px 18px;
@@ -152,17 +125,75 @@
         font-size: 0.85rem;
         font-weight: 700;
         border-radius: 8px;
-        text-decoration: none;
         border: none;
         cursor: pointer;
-        transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-        box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+        transition: background 0.2s, transform 0.15s;
     }
 
-    .cta-btn:hover {
+    .btn-acao:hover {
         background: var(--primary-hover);
         transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(245, 197, 24, 0.35);
+    }
+
+    /*  Hero  */
+    .prof-hero {
+        background: linear-gradient(135deg, #1a1a4e 0%, #0f0f2e 100%);
+        padding: 72px 24px 80px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .prof-hero::before {
+        content: '';
+        position: absolute;
+        width: 600px; height: 600px;
+        border-radius: 50%;
+        background: rgba(242,201,76,0.05);
+        top: -200px; right: -150px;
+        pointer-events: none;
+    }
+    .prof-hero::after {
+        content: '';
+        position: absolute;
+        width: 400px; height: 400px;
+        border-radius: 50%;
+        background: rgba(74,108,247,0.06);
+        bottom: -150px; left: -100px;
+        pointer-events: none;
+    }
+    .prof-hero-interno {
+        max-width: 640px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+    .prof-hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(242,201,76,0.12);
+        border: 1px solid rgba(242,201,76,0.3);
+        color: #F2C94C;
+        font-size: 0.78rem;
+        font-weight: 700;
+        padding: 6px 14px;
+        border-radius: 20px;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+    }
+    .prof-hero h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        margin-bottom: 16px;
+    }
+    .prof-hero h1 span { color: #F2C94C; }
+    .prof-hero p {
+        font-size: 1.05rem;
+        color: rgba(255,255,255,0.7);
+        line-height: 1.7;
     }
 
     /*  Main / Courses  */
@@ -373,7 +404,7 @@
     }
 
     @media (max-width: 640px) {
-        .nav-links {
+        .links-nav {
             display: none;
         }
 
