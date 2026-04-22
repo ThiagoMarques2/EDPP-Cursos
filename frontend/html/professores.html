@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="../css/professores-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Edpp - Professores</title>
+    <title>Edpp — Professores</title>
 </head>
 <body>
+
 
     <header>
         <nav>
@@ -20,119 +21,501 @@
                 <li><a href="comunidade.html">Comunidade</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
-            <div class="nav-actions">
-                <button class="search-btn" aria-label="Pesquisar">
+            <menu class="nav-actions">
+                <li><button class="search-btn" aria-label="Pesquisar">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                </button>
-                <button class="cta-btn">Comece a aprender</button>
-            </div>
+                </button></li>
+                <li><button class="cta-btn">Comece a aprender</button></li>
+            </menu>
         </nav>
     </header>
 
+
+    <!-- HERO -->
+    <section class="prof-hero">
+        <div class="prof-hero-interno">
+            <span class="prof-hero-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                Nossos Especialistas
+            </span>
+            <hgroup>
+                <h1>Aprenda com quem <span>domina</span> o assunto</h1>
+                <p>Professores doutores, especialistas e profissionais de mercado que transformam conhecimento em aprendizado real.</p>
+            </hgroup>
+        </div>
+    </section>
+
+
     <main>
         <section class="professores-section">
-            <h1>Nossos Professores</h1>
-            <p class="subtitle">Conheça os profissionais que tornam o aprendizado incrível</p>
 
-            <div class="professores-grid">
 
-                <div class="professor-card">
-                    <figure class="professor-avatar">JS</figure>
-                    <h3>João Silva</h3>
-                    <p class="professor-area">Ciências</p>
-                    <p class="professor-desc">Químico, Doutor pela UNICAMP com pós-doutorado em Química Orgânica.</p>
-                    <ul class="professor-stats">
-                        <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
-                        <li class="professor-stat"><span class="stat-numero">980</span><span class="stat-rotulo">Alunos</span></li>
-                        <li class="professor-stat"><span class="stat-numero">4.0</span><span class="stat-rotulo">Nota</span></li>
-                    </ul>
-                    <p class="estrelas">⭐⭐⭐⭐</p>
+            <div class="section-header">
+                <div>
+                    <h2>Todos os professores</h2>
+                    <p>Clique em um card para conhecer o professor</p>
                 </div>
-
-                <div class="professor-card">
-                    <figure class="professor-avatar">MS</figure>
-                    <h3>Maria Santos</h3>
-                    <p class="professor-area">Tecnologia</p>
-                    <p class="professor-desc">Engenheira de Software, Mestre pela USP em Inteligência Artificial.</p>
-                    <ul class="professor-stats">
-                        <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
-                        <li class="professor-stat"><span class="stat-numero">2.140</span><span class="stat-rotulo">Alunos</span></li>
-                        <li class="professor-stat"><span class="stat-numero">4.9</span><span class="stat-rotulo">Nota</span></li>
-                    </ul>
-                    <p class="estrelas">⭐⭐⭐⭐⭐</p>
-                </div>
-
-                <div class="professor-card">
-                    <figure class="professor-avatar">CO</figure>
-                    <h3>Carlos Oliveira</h3>
-                    <p class="professor-area">Arte & Design</p>
-                    <p class="professor-desc">Designer Gráfico, Especialista em UX pela PUC-SP.</p>
-                    <ul class="professor-stats">
-                        <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
-                        <li class="professor-stat"><span class="stat-numero">1.870</span><span class="stat-rotulo">Alunos</span></li>
-                        <li class="professor-stat"><span class="stat-numero">4.7</span><span class="stat-rotulo">Nota</span></li>
-                    </ul>
-                    <p class="estrelas">⭐⭐⭐⭐</p>
-                </div>
-
-                <div class="professor-card">
-                    <figure class="professor-avatar">AC</figure>
-                    <h3>Ana Costa</h3>
-                    <p class="professor-area">Marketing</p>
-                    <p class="professor-desc">Especialista em Marketing Digital, MBA pela FGV.</p>
-                    <ul class="professor-stats">
-                        <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
-                        <li class="professor-stat"><span class="stat-numero">3.210</span><span class="stat-rotulo">Alunos</span></li>
-                        <li class="professor-stat"><span class="stat-numero">4.9</span><span class="stat-rotulo">Nota</span></li>
-                    </ul>
-                    <p class="estrelas">⭐⭐⭐⭐⭐</p>
-                </div>
-
-                <div class="professor-card">
-                    <figure class="professor-avatar">RM</figure>
-                    <h3>Roberto Mendes</h3>
-                    <p class="professor-area">História</p>
-                    <p class="professor-desc">Historiador, Doutor pela PUC-RJ com foco em História Moderna.</p>
-                    <ul class="professor-stats">
-                        <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
-                        <li class="professor-stat"><span class="stat-numero">1.430</span><span class="stat-rotulo">Alunos</span></li>
-                        <li class="professor-stat"><span class="stat-numero">4.5</span><span class="stat-rotulo">Nota</span></li>
-                    </ul>
-                    <p class="estrelas">⭐⭐⭐⭐</p>
-                </div>
-
-                <div class="professor-card">
-                    <figure class="professor-avatar">FL</figure>
-                    <h3>Fernanda Lima</h3>
-                    <p class="professor-area">Negócios</p>
-                    <p class="professor-desc">PMP Certificada, MBA em Gestão de Projetos pelo INSPER.</p>
-                    <ul class="professor-stats">
-                        <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
-                        <li class="professor-stat"><span class="stat-numero">2.050</span><span class="stat-rotulo">Alunos</span></li>
-                        <li class="professor-stat"><span class="stat-numero">4.6</span><span class="stat-rotulo">Nota</span></li>
-                    </ul>
-                    <p class="estrelas">⭐⭐⭐⭐</p>
-                </div>
-
+                <menu class="filtro-area">
+                    <li><button class="filtro-btn ativo">Todos</button></li>
+                    <li><button class="filtro-btn">Tecnologia</button></li>
+                    <li><button class="filtro-btn">Ciencias</button></li>
+                    <li><button class="filtro-btn">Negocios</button></li>
+                    <li><button class="filtro-btn">Arte</button></li>
+                    <li><button class="filtro-btn">Marketing</button></li>
+                    <li><button class="filtro-btn">Historia</button></li>
+                </menu>
             </div>
+
+
+            <ul class="professores-grid">
+
+
+                <!-- João Silva — Ciências -->
+                <li data-categoria="ciencias">
+                <article class="professor-card" data-prof="joao">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#10b981,#059669)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 6px 20px rgba(16,185,129,0.35)">JS</figure>
+                        <h3>João Silva</h3>
+                        <span class="professor-area" style="background:#ecfdf5;color:#059669">🔬 Ciências</span>
+                        <p class="professor-desc">Químico, Doutor pela UNICAMP com pós-doutorado em Química Orgânica.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+                            <li class="professor-stat"><span class="stat-numero">980</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.0</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Maria Santos — Tecnologia -->
+                <li data-categoria="tecnologia">
+                <article class="professor-card" data-prof="maria">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#4a6cf7,#6c63ff)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#4a6cf7,#6c63ff);box-shadow:0 6px 20px rgba(74,108,247,0.35)">MS</figure>
+                        <h3>Maria Santos</h3>
+                        <span class="professor-area" style="background:#eef2ff;color:#4a6cf7">💻 Tecnologia</span>
+                        <p class="professor-desc">Engenheira de Software, Mestre pela USP em Inteligência Artificial.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+                            <li class="professor-stat"><span class="stat-numero">2.140</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.9</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Carlos Oliveira — Arte & Design -->
+                <li data-categoria="arte">
+                <article class="professor-card" data-prof="carlos">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#f59e0b,#d97706)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#f59e0b,#d97706);box-shadow:0 6px 20px rgba(245,158,11,0.35)">CO</figure>
+                        <h3>Carlos Oliveira</h3>
+                        <span class="professor-area" style="background:#fffbeb;color:#d97706">🎨 Arte & Design</span>
+                        <p class="professor-desc">Designer Gráfico, Especialista em UX pela PUC-SP.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+                            <li class="professor-stat"><span class="stat-numero">1.870</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.7</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Ana Costa — Marketing -->
+                <li data-categoria="marketing">
+                <article class="professor-card" data-prof="ana">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#ec4899,#db2777)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#ec4899,#db2777);box-shadow:0 6px 20px rgba(236,72,153,0.35)">AC</figure>
+                        <h3>Ana Costa</h3>
+                        <span class="professor-area" style="background:#fdf2f8;color:#db2777">📣 Marketing</span>
+                        <p class="professor-desc">Especialista em Marketing Digital, MBA pela FGV.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+                            <li class="professor-stat"><span class="stat-numero">3.210</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.9</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Roberto Mendes — História -->
+                <li data-categoria="história">
+                <article class="professor-card" data-prof="roberto">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#8b5cf6,#7c3aed)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed);box-shadow:0 6px 20px rgba(139,92,246,0.35)">RM</figure>
+                        <h3>Roberto Mendes</h3>
+                        <span class="professor-area" style="background:#f5f3ff;color:#7c3aed">🏛️ História</span>
+                        <p class="professor-desc">Historiador, Doutor pela PUC-RJ com foco em História Moderna.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+                            <li class="professor-stat"><span class="stat-numero">1.430</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.5</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Fernanda Lima — Negócios -->
+                <li data-categoria="negócios">
+                <article class="professor-card" data-prof="fernanda">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#0ea5e9,#0284c7)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#0ea5e9,#0284c7);box-shadow:0 6px 20px rgba(14,165,233,0.35)">FL</figure>
+                        <h3>Fernanda Lima</h3>
+                        <span class="professor-area" style="background:#f0f9ff;color:#0284c7">💼 Negócios</span>
+                        <p class="professor-desc">PMP Certificada, MBA em Gestão de Projetos pelo INSPER.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+                            <li class="professor-stat"><span class="stat-numero">2.050</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.6</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Lucas Ferreira — Tecnologia -->
+                <li data-categoria="tecnologia">
+                <article class="professor-card" data-prof="lucas">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#06b6d4,#0891b2)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#06b6d4,#0891b2);box-shadow:0 6px 20px rgba(6,182,212,0.35)">LF</figure>
+                        <h3>Lucas Ferreira</h3>
+                        <span class="professor-area" style="background:#ecfeff;color:#0891b2">💻 Tecnologia</span>
+                        <p class="professor-desc">Desenvolvedor Full Stack, especialista em React e Node.js com 10 anos de mercado.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">2</span><span class="stat-rotulo">Cursos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">3.400</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.8</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Beatriz Nunes — Arte -->
+                <li data-categoria="arte">
+                <article class="professor-card" data-prof="beatriz">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#f43f5e,#e11d48)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#f43f5e,#e11d48);box-shadow:0 6px 20px rgba(244,63,94,0.35)">BN</figure>
+                        <h3>Beatriz Nunes</h3>
+                        <span class="professor-area" style="background:#fff1f2;color:#e11d48">🎨 Arte & Design</span>
+                        <p class="professor-desc">Ilustradora e Motion Designer, formada pela ESPM com passagem pela Pixar.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">2</span><span class="stat-rotulo">Cursos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">2.200</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.8</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Rafael Torres — Negócios -->
+                <li data-categoria="negócios">
+                <article class="professor-card" data-prof="rafael">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#84cc16,#65a30d)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#84cc16,#65a30d);box-shadow:0 6px 20px rgba(132,204,22,0.35)">RT</figure>
+                        <h3>Rafael Torres</h3>
+                        <span class="professor-area" style="background:#f7fee7;color:#65a30d">💼 Negócios</span>
+                        <p class="professor-desc">Empreendedor serial, fundou 3 startups e é mentor de aceleradoras como Y Combinator.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">2</span><span class="stat-rotulo">Cursos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">1.750</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.7</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Camila Rocha — Ciências -->
+                <li data-categoria="ciencias">
+                <article class="professor-card" data-prof="camila">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#f97316,#ea580c)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#f97316,#ea580c);box-shadow:0 6px 20px rgba(249,115,22,0.35)">CR</figure>
+                        <h3>Camila Rocha</h3>
+                        <span class="professor-area" style="background:#fff7ed;color:#ea580c">🔬 Ciências</span>
+                        <p class="professor-desc">Bióloga, Doutora em Genômica pela USP, pesquisadora do Instituto Butantan.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+                            <li class="professor-stat"><span class="stat-numero">1.100</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.6</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Diego Alves — Tecnologia -->
+                <li data-categoria="tecnologia">
+                <article class="professor-card" data-prof="diego">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#6366f1,#4f46e5)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#6366f1,#4f46e5);box-shadow:0 6px 20px rgba(99,102,241,0.35)">DA</figure>
+                        <h3>Diego Alves</h3>
+                        <span class="professor-area" style="background:#eef2ff;color:#4f46e5">💻 Tecnologia</span>
+                        <p class="professor-desc">Engenheiro de Dados, especialista em AWS e arquiteturas cloud-native na AWS Brasil.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">2</span><span class="stat-rotulo">Cursos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">2.800</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.9</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Priya Sharma — Tecnologia -->
+                <li data-categoria="tecnologia">
+                <article class="professor-card" data-prof="priya">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#a855f7,#9333ea)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#a855f7,#9333ea);box-shadow:0 6px 20px rgba(168,85,247,0.35)">PS</figure>
+                        <h3>Priya Sharma</h3>
+                        <span class="professor-area" style="background:#faf5ff;color:#9333ea">💻 Tecnologia</span>
+                        <p class="professor-desc">Especialista em Cibersegurança, certificada CISSP com experiência em grandes bancos.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">2</span><span class="stat-rotulo">Cursos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">1.920</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.8</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Marcos Vinicius — Negócios -->
+                <li data-categoria="negócios">
+                <article class="professor-card" data-prof="marcos">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#14b8a6,#0d9488)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#14b8a6,#0d9488);box-shadow:0 6px 20px rgba(20,184,166,0.35)">MV</figure>
+                        <h3>Marcos Vinicius</h3>
+                        <span class="professor-area" style="background:#f0fdfa;color:#0d9488">💼 Negócios</span>
+                        <p class="professor-desc">Consultor financeiro, CFA certificado com 15 anos em bancos de investimento.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">2</span><span class="stat-rotulo">Cursos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">2.300</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.7</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Juliana Freitas — Arte -->
+                <li data-categoria="arte">
+                <article class="professor-card" data-prof="juliana">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#f59e0b,#b45309)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#f59e0b,#b45309);box-shadow:0 6px 20px rgba(245,158,11,0.35)">JF</figure>
+                        <h3>Juliana Freitas</h3>
+                        <span class="professor-area" style="background:#fffbeb;color:#b45309">🎨 Arte & Design</span>
+                        <p class="professor-desc">Fotógrafa profissional premiada, especialista em fotografia editorial e de moda.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">2</span><span class="stat-rotulo">Cursos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">1.650</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.9</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Eduardo Pires — Ciências -->
+                <li data-categoria="ciencias">
+                <article class="professor-card" data-prof="eduardo">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#3b82f6,#1d4ed8)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8);box-shadow:0 6px 20px rgba(59,130,246,0.35)">EP</figure>
+                        <h3>Eduardo Pires</h3>
+                        <span class="professor-area" style="background:#eff6ff;color:#1d4ed8">🔬 Ciências</span>
+                        <p class="professor-desc">Físico, Doutor pelo MIT, pesquisador em mecânica quântica e computação quântica.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+                            <li class="professor-stat"><span class="stat-numero">870</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.8</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Tatiane Moura — Negócios -->
+                <li data-categoria="negócios">
+                <article class="professor-card" data-prof="tatiane">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#ec4899,#9333ea)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#ec4899,#9333ea);box-shadow:0 6px 20px rgba(236,72,153,0.35)">TM</figure>
+                        <h3>Tatiane Moura</h3>
+                        <span class="professor-area" style="background:#fdf4ff;color:#9333ea">💼 Negócios</span>
+                        <p class="professor-desc">Especialista em RH e cultura organizacional, ex-CHRO da Magazine Luiza.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">2</span><span class="stat-rotulo">Cursos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">2.100</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.6</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Bruno Castro — Tecnologia -->
+                <li data-categoria="tecnologia">
+                <article class="professor-card" data-prof="bruno">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#10b981,#4a6cf7)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#10b981,#4a6cf7);box-shadow:0 6px 20px rgba(16,185,129,0.35)">BC</figure>
+                        <h3>Bruno Castro</h3>
+                        <span class="professor-area" style="background:#ecfdf5;color:#059669">💻 Tecnologia</span>
+                        <p class="professor-desc">Especialista em DevOps e CI/CD, ex-engenheiro sênior do Nubank e iFood.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">2</span><span class="stat-rotulo">Cursos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">3.100</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.9</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Larissa Campos — Arte -->
+                <li data-categoria="arte">
+                <article class="professor-card" data-prof="larissa">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#f43f5e,#f59e0b)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#f43f5e,#f59e0b);box-shadow:0 6px 20px rgba(244,63,94,0.35)">LC</figure>
+                        <h3>Larissa Campos</h3>
+                        <span class="professor-area" style="background:#fff1f2;color:#e11d48">🎨 Arte & Design</span>
+                        <p class="professor-desc">Diretora de arte com 12 anos em agências como DDB e Ogilvy Brasil.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+                            <li class="professor-stat"><span class="stat-numero">1.400</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.7</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Henrique Souza — Ciências -->
+                <li data-categoria="ciencias">
+                <article class="professor-card" data-prof="henrique">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#06b6d4,#10b981)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#06b6d4,#10b981);box-shadow:0 6px 20px rgba(6,182,212,0.35)">HS</figure>
+                        <h3>Henrique Souza</h3>
+                        <span class="professor-area" style="background:#ecfeff;color:#0891b2">🔬 Ciências</span>
+                        <p class="professor-desc">Matemático, Doutor pela IMPA, especialista em estatística e ciência de dados.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">2</span><span class="stat-rotulo">Cursos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">1.580</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.8</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+                <!-- Vanessa Lima — Negócios -->
+                <li data-categoria="negócios">
+                <article class="professor-card" data-prof="vanessa">
+                    <header class="card-topo" style="background:linear-gradient(90deg,#f97316,#ec4899)"></header>
+                    <section class="card-corpo">
+                        <figure class="professor-avatar" style="background:linear-gradient(135deg,#f97316,#ec4899);box-shadow:0 6px 20px rgba(249,115,22,0.35)">VL</figure>
+                        <h3>Vanessa Lima</h3>
+                        <span class="professor-area" style="background:#fff7ed;color:#ea580c">💼 Negócios</span>
+                        <p class="professor-desc">Especialista em vendas B2B e negociação, ex-diretora comercial da Totvs.</p>
+                        <ul class="professor-stats">
+                            <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+                            <li class="professor-stat"><span class="stat-numero">1.900</span><span class="stat-rotulo">Alunos</span></li>
+                            <li class="professor-stat"><span class="stat-numero">4.7</span><span class="stat-rotulo">Nota</span></li>
+                        </ul>
+                        <p class="estrelas">⭐⭐⭐⭐</p>
+                    </section>
+                </article>
+                </li>
+
+
+            </ul>
+
+            <nav class="paginacao" aria-label="Paginação">
+                <button class="pag-btn pag-anterior" aria-label="Página anterior" disabled>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <ol class="pag-numeros"></ol>
+                <button class="pag-btn pag-proximo" aria-label="Próxima página">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+            </nav>
+
         </section>
     </main>
 
+
+    <!-- OVERLAY -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+    <!-- DRAWER -->
+    <aside class="drawer" id="drawer" aria-label="Perfil do professor">
+        <header class="drawer-topo" id="drawerTopo">
+            <button class="drawer-fechar" id="drawerFechar" aria-label="Fechar">✕</button>
+            <figure class="drawer-avatar" id="drawerAvatar"></figure>
+            <p class="drawer-nome" id="drawerNome"></p>
+            <span class="drawer-area" id="drawerArea"></span>
+        </header>
+        <section class="drawer-corpo" id="drawerCorpo"></section>
+    </aside>
+
+
     <footer>
         <p class="social-title">Redes Sociais</p>
-        <div class="social-icons">
-            <a href="#" aria-label="Facebook">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-            <a href="#" aria-label="Twitter">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-            </a>
-            <a href="#" aria-label="Instagram">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-            </a>
-        </div>
-        <p class="copyright">&copy; 2024 Ensino digital para preparação profissional. Todos os direitos reservados.</p>
+        <menu class="social-icons">
+            <li><a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></li>
+            <li><a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a></li>
+            <li><a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a></li>
+        </menu>
+        <p class="copyright">&copy; 2026 Ensino digital para preparação profissional. Todos os direitos reservados.</p>
     </footer>
 
+
+    <script src="../js/professores.js" defer></script>
 </body>
 </html>
+
+
+
