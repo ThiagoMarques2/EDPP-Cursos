@@ -1,0 +1,515 @@
+/* ============================================================
+   Curso Detalhe — versão aprimorada
+   Mantém a identidade visual do site (mesmas variáveis):
+   --surface, --border, --text, --text-muted, --accent
+   ============================================================ */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.curso-detalhe {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  animation: fadeUp 0.4s ease-out forwards;
+}
+
+/* ===== Botão Voltar ===== */
+.voltar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 32px;
+}
+
+.voltar-btn:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+  transform: translateX(-4px);
+}
+
+/* ===== Header ===== */
+.detalhe-header {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  margin-bottom: 56px;
+  align-items: start;
+}
+
+.detalhe-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.detalhe-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.detalhe-info h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.detalhe-professor {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* ===== Specs ===== */
+.detalhe-specs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spec-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.spec-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.detalhe-descricao {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.detalhe-preco-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.detalhe-preco {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+/* ===== Conteúdo (cards) ===== */
+.detalhe-conteudo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.curriculo-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.card-cabecalho {
+  margin-bottom: 24px;
+}
+
+.card-cabecalho h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 6px;
+}
+
+.card-subtitulo {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   Dropdown "O que você vai dominar"
+   ============================================================ */
+.detalhe-topicos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topico-item {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.topico-item:hover {
+  border-color: var(--text-muted);
+}
+
+.topico-item.open {
+  border-color: var(--accent);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.topico-trigger {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  padding: 18px 20px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.topico-trigger:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.topico-num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.topico-item.open .topico-num {
+  background: var(--accent);
+  color: #fff;
+}
+
+.topico-titulo {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.topico-chevron {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  transition: transform 0.25s ease;
+}
+
+.topico-item.open .topico-chevron {
+  transform: rotate(180deg);
+  color: var(--accent);
+}
+
+.topico-conteudo {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.topico-conteudo > p {
+  overflow: hidden;
+  margin: 0;
+  padding: 0 20px 0 68px;
+  font-size: 0.93rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* garante ocultação total quando fechado */
+.topico-item .topico-conteudo {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.topico-item.open .topico-conteudo {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ============================================================
+   Conteúdo de cada aula
+   ============================================================ */
+.aulas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.aula-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.aula-item:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.aula-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--text);
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+}
+
+.aula-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.aula-cabecalho h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.aula-duracao {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.aula-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   Reviews dos alunos
+   ============================================================ */
+.reviews-cabecalho {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.reviews-resumo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.reviews-nota {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+}
+
+.reviews-total {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.reviews-lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.review-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.review-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.review-head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.02em;
+}
+
+.review-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.review-nome {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.review-data {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.review-stars {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.review-stars .star {
+  color: var(--border);
+}
+
+.review-stars .star.filled {
+  color: #f5a524; /* amarelo de estrela — visualmente neutro entre temas */
+}
+
+.review-texto {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   Responsivo
+   ============================================================ */
+@media (max-width: 1024px) {
+  .reviews-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .detalhe-header {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .detalhe-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .curriculo-card {
+    padding: 24px;
+  }
+
+  .reviews-cabecalho {
+    flex-direction: column;
+  }
+
+  .topico-conteudo > p {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .reviews-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .detalhe-specs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .topico-trigger {
+    padding: 14px 16px;
+    font-size: 0.95rem;
+  }
+}

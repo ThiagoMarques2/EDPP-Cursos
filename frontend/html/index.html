@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edpp — Alimente sua Curiosidade</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--  CABEÇALHO / NAVEGAÇÃO  -->
+  <header class="site-header">
+    <nav class="header-nav">
+      <a href="index.html" class="logo">Ed<span>pp</span></a>
+      <ul class="links-nav">
+        <li><a href="#" class="ativo">Explorar</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="professores.html">Professores</a></li>
+        <li><a href="comunidade.html">Comunidade</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+      <section class="acoes-header">
+        <button class="btn-pesquisa" aria-label="Pesquisar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="btn-carrinho" aria-label="Planos" onclick="document.getElementById('modalPlanos').showModal()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </button>
+        <button class="btn-acao" onclick="window.location.href='login.html'">Comece a Aprender</button>
+      </section>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--  HERO  -->
+    <section class="hero">
+      <article class="hero-grade">
+        <header class="hero-conteudo">
+          <h1>Alimente sua<br><span>Curiosidade</span></h1>
+          <h2 class="hero-subtitulo">Aprenda com os melhores especialistas</h2>
+          <p class="hero-descricao">Explore cursos práticos em ciência, história, tecnologia e muito mais.</p>
+        </header>
+        <figure class="hero-visual" aria-label="Ilustração de mente curiosa">
+          <section class="circulo-flutuante">
+            <article class="float-card float-card--principal">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#1A1A3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </article>
+            <article class="float-card float-card--topo-esquerda">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4a6cf7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            </article>
+            <article class="float-card float-card--topo-direita">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C94C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            </article>
+            <article class="float-card float-card--base-esquerda">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C94C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </article>
+            <article class="float-card float-card--base-direita">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4a6cf7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg>
+            </article>
+          </section>
+        </figure>
+      </article>
+    </section>
+
+    <!--  CURSOS EM ALTA  -->
+    <section class="em-alta">
+      <article class="secao-interna">
+        <header class="secao-header">
+          <h2>Cursos em Alta</h2>
+          <a href="cursos.html" class="btn-contorno">Ver todos →</a>
+        </header>
+        <ul class="lista-categorias">
+          <li class="categoria-card"><span class="categoria-icone">💻</span> Tecnologia</li>
+          <li class="categoria-card"><span class="categoria-icone">🎨</span> Arte</li>
+          <li class="categoria-card"><span class="categoria-icone">📣</span> Marketing</li>
+          <li class="categoria-card"><span class="categoria-icone">🏛️</span> História</li>
+          <li class="categoria-card"><span class="categoria-icone">🧠</span> Psicologia</li>
+        </ul>
+        <ul class="lista-cursos">
+
+          <!-- Card de Curso: Programação em Java -->
+          <li class="curso-card">
+            <figure class="card-imagem">
+              <img src="../img/java.jpg" alt="Programação em Java">
+            </figure>
+            <article class="card-corpo">
+              <h2>Programação em Java</h2>
+              <span class="etiqueta">Avançado</span>
+              <ul class="card-meta">
+                <li>⏱ 20h</li>
+                <li>📚 38 aulas</li>
+                <li>👥 2.140</li>
+              </ul>
+              <span class="nome-professor">Prof. Maria Santos</span>
+              <span class="preco">R$ 187,35</span>
+            </article>
+          </li>
+
+          <!-- Card de Curso: Design Gráfico -->
+          <li class="curso-card">
+            <figure class="card-imagem">
+              <img src="../img/design-grafico.jpg" alt="Design Gráfico">
+            </figure>
+            <article class="card-corpo">
+              <h2>Design Gráfico</h2>
+              <span class="etiqueta">Intermediário</span>
+              <ul class="card-meta">
+                <li>⏱ 15h</li>
+                <li>📚 28 aulas</li>
+                <li>👥 1.870</li>
+              </ul>
+              <span class="nome-professor">Prof. Carlos Oliveira</span>
+              <span class="preco">R$ 122,50</span>
+            </article>
+          </li>
+
+          <!-- Card de Curso: Marketing Digital -->
+          <li class="curso-card">
+            <figure class="card-imagem">
+              <img src="../img/marketing.jpg" alt="Marketing Digital">
+            </figure>
+            <article class="card-corpo">
+              <h2>Marketing Digital</h2>
+              <span class="etiqueta">Iniciante</span>
+              <ul class="card-meta">
+                <li>⏱ 18h</li>
+                <li>📚 32 aulas</li>
+                <li>👥 3.210</li>
+              </ul>
+              <span class="nome-professor">Prof. Ana Costa</span>
+              <span class="preco">R$ 158,87</span>
+            </article>
+          </li>
+
+        </ul>
+      </article>
+    </section>
+
+    <!--  COMUNIDADE  -->
+    <section class="comunidade">
+      <article class="comunidade-grade">
+        <header>
+          <h2>Entre para a Comunidade <span>Edpp</span></h2>
+          <p>Conecte-se com milhares de mentes curiosas, participe de discussões e compartilhe suas descobertas.</p>
+          <a href="comunidade.html" class="btn-secundario">Comece Agora →</a>
+        </header>
+      </article>
+    </section>
+
+    <!--  PERGUNTAS FREQUENTES  -->
+    <section class="faq">
+      <article class="faq-recipiente">
+        <h2>Perguntas Frequentes</h2>
+        <p class="faq-subtitulo">Tudo o que você precisa saber sobre a plataforma</p>
+        <ul class="faq-lista">
+          <li class="faq-item">
+            <button class="faq-pergunta">Como funcionam os cursos? <span>▼</span></button>
+            <p class="faq-resposta">Nossos cursos são compostos por vídeos curtos, artigos interativos e quizzes. Você aprende no seu ritmo.</p>
+          </li>
+          <li class="faq-item">
+            <button class="faq-pergunta">Os cursos têm certificado? <span>▼</span></button>
+            <p class="faq-resposta">Sim! Ao concluir, você recebe um certificado digital verificável.</p>
+          </li>
+          <li class="faq-item">
+            <button class="faq-pergunta">Os cursos são ao vivo ou gravados? <span>▼</span></button>
+            <p class="faq-resposta">A maioria é gravada, mas oferecemos eventos ao vivo e perguntas e respostas com professores.</p>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!--  PROFESSORES / ESPECIALISTAS  -->
+    <section class="professores">
+      <article class="secao-interna">
+        <header class="secao-header">
+          <section>
+            <h2>Nossos Especialistas</h2>
+            <p>Conheça os profissionais que tornam o aprendizado incrível</p>
+          </section>
+          <a href="professores.html" class="btn-contorno">Ver todos →</a>
+        </header>
+        <ul class="lista-professores">
+
+          <!-- Card: João Silva -->
+          <li class="professor-card">
+            <figure class="professor-avatar">JS</figure>
+            <h3>João Silva</h3>
+            <p class="professor-area">Ciências</p>
+            <p class="professor-desc">Químico, Doutor pela UNICAMP</p>
+            <ul class="professor-stats">
+              <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+              <li class="professor-stat"><span class="stat-numero">980</span><span class="stat-rotulo">Alunos</span></li>
+              <li class="professor-stat"><span class="stat-numero">4.0</span><span class="stat-rotulo">Nota</span></li>
+            </ul>
+            <p class="estrelas">⭐⭐⭐⭐</p>
+          </li>
+
+          <!-- Card: Maria Santos -->
+          <li class="professor-card">
+            <figure class="professor-avatar">MS</figure>
+            <h3>Maria Santos</h3>
+            <p class="professor-area">Tecnologia</p>
+            <p class="professor-desc">Engenheira de Software, Mestre pela USP</p>
+            <ul class="professor-stats">
+              <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+              <li class="professor-stat"><span class="stat-numero">2.140</span><span class="stat-rotulo">Alunos</span></li>
+              <li class="professor-stat"><span class="stat-numero">4.9</span><span class="stat-rotulo">Nota</span></li>
+            </ul>
+            <p class="estrelas">⭐⭐⭐⭐⭐</p>
+          </li>
+
+          <!-- Card: Carlos Oliveira -->
+          <li class="professor-card">
+            <figure class="professor-avatar">CO</figure>
+            <h3>Carlos Oliveira</h3>
+            <p class="professor-area">Arte & Design</p>
+            <p class="professor-desc">Designer Gráfico, Especialista em UX</p>
+            <ul class="professor-stats">
+              <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+              <li class="professor-stat"><span class="stat-numero">1.870</span><span class="stat-rotulo">Alunos</span></li>
+              <li class="professor-stat"><span class="stat-numero">4.7</span><span class="stat-rotulo">Nota</span></li>
+            </ul>
+            <p class="estrelas">⭐⭐⭐⭐</p>
+          </li>
+
+          <!-- Card: Ana Costa -->
+          <li class="professor-card">
+            <figure class="professor-avatar">AC</figure>
+            <h3>Ana Costa</h3>
+            <p class="professor-area">Marketing</p>
+            <p class="professor-desc">Especialista em Marketing Digital</p>
+            <ul class="professor-stats">
+              <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+              <li class="professor-stat"><span class="stat-numero">3.210</span><span class="stat-rotulo">Alunos</span></li>
+              <li class="professor-stat"><span class="stat-numero">4.9</span><span class="stat-rotulo">Nota</span></li>
+            </ul>
+            <p class="estrelas">⭐⭐⭐⭐⭐</p>
+          </li>
+
+          <!-- Card: Roberto Mendes -->
+          <li class="professor-card">
+            <figure class="professor-avatar">RM</figure>
+            <h3>Roberto Mendes</h3>
+            <p class="professor-area">História</p>
+            <p class="professor-desc">Historiador, Doutor pela PUC</p>
+            <ul class="professor-stats">
+              <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+              <li class="professor-stat"><span class="stat-numero">1.430</span><span class="stat-rotulo">Alunos</span></li>
+              <li class="professor-stat"><span class="stat-numero">4.5</span><span class="stat-rotulo">Nota</span></li>
+            </ul>
+            <p class="estrelas">⭐⭐⭐⭐</p>
+          </li>
+
+          <!-- Card: Fernanda Lima -->
+          <li class="professor-card">
+            <figure class="professor-avatar">FL</figure>
+            <h3>Fernanda Lima</h3>
+            <p class="professor-area">Negócios</p>
+            <p class="professor-desc">PMP Certificada, MBA em Gestão</p>
+            <ul class="professor-stats">
+              <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+              <li class="professor-stat"><span class="stat-numero">2.050</span><span class="stat-rotulo">Alunos</span></li>
+              <li class="professor-stat"><span class="stat-numero">4.6</span><span class="stat-rotulo">Nota</span></li>
+            </ul>
+            <p class="estrelas">⭐⭐⭐⭐</p>
+          </li>
+
+          <!-- Card: Carlos Pereira -->
+          <li class="professor-card">
+            <figure class="professor-avatar">CP</figure>
+            <h3>Carlos Pereira</h3>
+            <p class="professor-area">Administração</p>
+            <p class="professor-desc">Administrador, Especialista em Gestão</p>
+            <ul class="professor-stats">
+              <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+              <li class="professor-stat"><span class="stat-numero">1.620</span><span class="stat-rotulo">Alunos</span></li>
+              <li class="professor-stat"><span class="stat-numero">4.4</span><span class="stat-rotulo">Nota</span></li>
+            </ul>
+            <p class="estrelas">⭐⭐⭐⭐</p>
+          </li>
+
+          <!-- Card: Francisco Almeida -->
+          <li class="professor-card">
+            <figure class="professor-avatar">FA</figure>
+            <h3>Francisco Almeida</h3>
+            <p class="professor-area">Tecnologia</p>
+            <p class="professor-desc">Engenheiro de Software Sênior</p>
+            <ul class="professor-stats">
+              <li class="professor-stat"><span class="stat-numero">1</span><span class="stat-rotulo">Curso</span></li>
+              <li class="professor-stat"><span class="stat-numero">1.290</span><span class="stat-rotulo">Alunos</span></li>
+              <li class="professor-stat"><span class="stat-numero">4.8</span><span class="stat-rotulo">Nota</span></li>
+            </ul>
+            <p class="estrelas">⭐⭐⭐⭐⭐</p>
+          </li>
+
+        </ul>
+      </article>
+    </section>
+
+  </main>
+
+  <!--  RODAPÉ  -->
+  <footer class="rodape">
+    <section class="rodape-interno">
+      <p class="titulo-redes">Redes Sociais</p>
+      <nav class="rodape__redes" aria-label="Redes sociais">
+        <a href="#" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+      </nav>
+      <p class="rodape__base">&copy; 2026 Ensino digital para preparação profissional. Todos os direitos reservados.</p>
+    </section>
+  </footer>
+
+  <!--   PLANOS  -->
+  <dialog id="modalPlanos" class="modal modal-planos" onclick="if(event.target===this)this.close()">
+    <article class="planos-conteudo">
+      <button class="planos-fechar" onclick="document.getElementById('modalPlanos').close()">&times;</button>
+      <h2 class="planos-titulo">Escolha seu Plano</h2>
+      <p class="planos-sub">Invista no seu conhecimento. Cancele quando quiser.</p>
+      <section class="planos-grade">
+
+        <!-- Plano Básico -->
+        <article class="plano-card">
+          <h3>Básico</h3>
+          <p class="plano-descricao">Ideal para começar</p>
+          <p class="plano-preco"><span class="plano-cifrao">R$</span>29<span class="plano-mes">/mês</span></p>
+          <ul class="plano-recursos">
+            <li><span class="check">✓</span> Acesso a 10 cursos</li>
+            <li><span class="check">✓</span> Certificados digitais</li>
+            <li><span class="check">✓</span> Suporte por e-mail</li>
+            <li><span class="check check--inativo">✓</span> Cursos exclusivos</li>
+            <li><span class="check check--inativo">✓</span> Mentorias ao vivo</li>
+          </ul>
+          <button class="plano-btn plano-btn--contorno">Assinar Plano</button>
+        </article>
+
+        <!-- Plano Pro -->
+        <article class="plano-card plano-card--pro">
+          <p class="plano-destaque">👑 MAIS POPULAR</p>
+          <h3>Pro</h3>
+          <p class="plano-descricao">Para quem quer evoluir rápido</p>
+          <p class="plano-preco"><span class="plano-cifrao">R$</span>59<span class="plano-mes">/mês</span></p>
+          <ul class="plano-recursos">
+            <li><span class="check">✓</span> Acesso a todos os cursos</li>
+            <li><span class="check">✓</span> Certificados digitais</li>
+            <li><span class="check">✓</span> Suporte prioritário</li>
+            <li><span class="check">✓</span> Cursos exclusivos</li>
+            <li><span class="check check--inativo">✓</span> Mentorias ao vivo</li>
+          </ul>
+          <button class="plano-btn plano-btn--pro">Assinar Plano</button>
+        </article>
+
+        <!-- Plano Premium -->
+        <article class="plano-card">
+          <h3>Premium</h3>
+          <p class="plano-descricao">Experiência completa</p>
+          <p class="plano-preco"><span class="plano-cifrao">R$</span>99<span class="plano-mes">/mês</span></p>
+          <ul class="plano-recursos">
+            <li><span class="check">✓</span> Acesso a todos os cursos</li>
+            <li><span class="check">✓</span> Certificados digitais</li>
+            <li><span class="check">✓</span> Suporte 24/7</li>
+            <li><span class="check">✓</span> Cursos exclusivos</li>
+            <li><span class="check">✓</span> Mentorias ao vivo</li>
+          </ul>
+          <button class="plano-btn plano-btn--contorno">Assinar Plano</button>
+        </article>
+
+      </section>
+    </article>
+  </dialog>
+
+  <!--  SCRIPTS  -->
+  <script>
+    /* Acordeão de perguntas frequentes */
+    document.querySelectorAll('.faq-pergunta').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.closest('.faq-item').classList.toggle('aberto');
+      });
+    });
+  </script>
+  <script src="../js/login-signup.js"></script>
+
+</body>
+</html>

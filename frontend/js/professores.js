@@ -445,7 +445,7 @@ function abrirDrawer(id) {
             <ul class="drawer-cursos">
                 ${p.cursos.map(c => `
                     <li class="drawer-curso">
-                        <span class="drawer-curso-icone" style="background:${p.grad.replace('135deg','180deg')};opacity:0.15;font-size:1.3rem">${c.emoji}</span>
+                        <span class="drawer-curso-icone" style="background:${p.grad.replace('135deg','180deg')};font-size:1.3rem">${c.emoji}</span>
                         <div class="drawer-curso-info">
                             <p class="drawer-curso-nome">${c.nome}</p>
                             <p class="drawer-curso-meta">${c.meta}</p>
