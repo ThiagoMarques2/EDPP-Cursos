@@ -752,6 +752,7 @@ body {
   font-size: 0.78rem;
   color: #8892a4;
   opacity: 0.7;
+  text-align: center;
 }
 
 @media (max-width: 900px) {

@@ -6,6 +6,7 @@
   <title>Edpp — Comunidade</title>
   <link rel="stylesheet" href="../css/comunidade.css">
   <link rel="stylesheet" href="../css/discussoes.css">
+  <link rel="stylesheet" href="../css/nav.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
@@ -15,7 +16,7 @@
   <header class="site-header">
     <nav class="header-nav">
       <a href="../index.html" class="logo">Ed<span>pp</span></a>
-      <ul class="links-nav">
+      <ul class="links-nav" id="linksNav">
         <li><a href="../index.html">Explorar</a></li>
         <li><a href="cursos.html">Cursos</a></li>
         <li><a href="professores.html">Professores</a></li>
@@ -26,10 +27,12 @@
         <button class="btn-pesquisa" aria-label="Pesquisar">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         </button>
-        <button class="btn-carrinho" aria-label="Planos" onclick="document.getElementById('modalPlanos').showModal()">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-        </button>
         <button class="btn-acao" onclick="window.location.href='login.html'">Comece a Aprender</button>
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="linksNav">
+          <span class="linha linha-1"></span>
+          <span class="linha linha-2"></span>
+          <span class="linha linha-3"></span>
+        </button>
       </section>
     </nav>
   </header>
@@ -395,6 +398,7 @@
   <!--  SCRIPTS  -->
   <script src="../js/login-signup.js"></script>
   <script src="../js/discussoes.js"></script>
+  <script src="../js/nav.js"></script>
 
 </body>
 </html>

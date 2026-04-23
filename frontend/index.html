@@ -14,7 +14,7 @@
   <header class="site-header">
     <nav class="header-nav">
       <a href="index.html" class="logo">Ed<span>pp</span></a>
-      <ul class="links-nav">
+      <ul class="links-nav" id="linksNav" aria-label="Menu principal">
         <li><a href="#" class="ativo">Explorar</a></li>
         <li><a href="html/cursos.html">Cursos</a></li>
         <li><a href="html/professores.html">Professores</a></li>
@@ -25,10 +25,10 @@
         <button class="btn-pesquisa" aria-label="Pesquisar">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         </button>
-        <button class="btn-carrinho" aria-label="Planos" onclick="document.getElementById('modalPlanos').showModal()">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-        </button>
         <button class="btn-acao" onclick="window.location.href='html/login.html'">Comece a Aprender</button>
+        <button class="btn-menu" aria-label="Menu" aria-expanded="false" id="btnMenu">
+          <span></span><span></span><span></span>
+        </button>
       </section>
     </nav>
   </header>
@@ -70,7 +70,7 @@
       <article class="secao-interna">
         <header class="secao-header">
           <h2>Cursos em Alta</h2>
-          <a href="html/cursos.html" class="btn-contorno">Ver todos →</a>
+          <a href="html/cursos.html" class="btn-contorno">Ver todos <span class="seta">→</span></a>
         </header>
         <ul class="lista-categorias">
           <li class="categoria-card"><span class="categoria-icone">💻</span> Tecnologia</li>
@@ -78,6 +78,7 @@
           <li class="categoria-card"><span class="categoria-icone">📣</span> Marketing</li>
           <li class="categoria-card"><span class="categoria-icone">🏛️</span> História</li>
           <li class="categoria-card"><span class="categoria-icone">🧠</span> Psicologia</li>
+          <li class="categoria-card"><span class="categoria-icone">💼</span> Negócios</li>
         </ul>
         <ul class="lista-cursos">
 
@@ -186,7 +187,7 @@
             <h2>Nossos Especialistas</h2>
             <p>Conheça os profissionais que tornam o aprendizado incrível</p>
           </section>
-          <a href="html/professores.html" class="btn-contorno">Ver todos →</a>
+          <a href="html/professores.html" class="btn-contorno">Ver todos <span class="seta">→</span></a>
         </header>
         <ul class="lista-professores">
 
@@ -435,11 +436,31 @@
 
   <!--  SCRIPTS  -->
   <script>
-    /* Acordeão de perguntas frequentes */
     document.querySelectorAll('.faq-pergunta').forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.closest('.faq-item').classList.toggle('aberto');
-      });
+      btn.addEventListener('click', () => btn.closest('.faq-item').classList.toggle('aberto'));
+    });
+
+    const btnMenu  = document.getElementById('btnMenu');
+    const linksNav = document.getElementById('linksNav');
+
+    function abrirMenu() {
+      linksNav.classList.add('aberto');
+      btnMenu.classList.add('aberto');
+      btnMenu.setAttribute('aria-expanded', 'true');
+    }
+    function fecharMenu() {
+      linksNav.classList.remove('aberto');
+      btnMenu.classList.remove('aberto');
+      btnMenu.setAttribute('aria-expanded', 'false');
+    }
+
+    btnMenu.addEventListener('click', e => {
+      e.stopPropagation();
+      linksNav.classList.contains('aberto') ? fecharMenu() : abrirMenu();
+    });
+    linksNav.querySelectorAll('a').forEach(a => a.addEventListener('click', fecharMenu));
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.header-nav')) fecharMenu();
     });
   </script>
   <script src="js/login-signup.js"></script>
