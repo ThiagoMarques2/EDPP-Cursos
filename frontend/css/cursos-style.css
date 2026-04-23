@@ -345,7 +345,7 @@
   color: #8892a4;
   opacity: 0.7;
   text-align: center;
-} */
+} 
     @media (max-width: 900px) {
         .cursos-grid {
             grid-template-columns: repeat(2, 1fr);

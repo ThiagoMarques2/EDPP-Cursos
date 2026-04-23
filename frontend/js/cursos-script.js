@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <div class="detalhe-preco-container">
               <span class="detalhe-preco">${preco}</span>
-              <button class="cta-btn detalhe-cta" type="button">Matricular-se agora</button>
+              <button class="cta-btn" type="button">Matricular-se agora</button>
             </div>
           </div>
         </div>

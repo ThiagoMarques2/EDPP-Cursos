@@ -1,14 +1,30 @@
-// Filtro de cursos — versão com event delegation
-// Imune a re-render do <main>: o listener vive no document e
-// nunca é destruído quando o innerHTML do main é substituído.
+// Filtro de cursos — versão corrigida
+// Correções:
+//  1) Não depende mais da classe .hidden (que não existe no CSS).
+//     Usa style.display direto.
+//  2) Mantém o estado do filtro (categoria + nivel) mesmo quando
+//     o <main> é substituído pela tela de detalhe e depois volta.
+//  3) MutationObserver com guarda — só reaplica quando a listagem
+//     volta a existir, e restaura o valor dos <select>.
 (function () {
+  // Estado do filtro preservado em memória
+  let estadoFiltro = { categoria: "", nivel: "" };
+
   function filtrarCursos() {
     const categoriaSelect = document.getElementById("categoria");
     const nivelSelect = document.getElementById("nivel");
     if (!categoriaSelect || !nivelSelect) return; // tela de detalhe
 
-    const categoria = categoriaSelect.value;
-    const nivel = nivelSelect.value;
+    // Restaura visualmente os selects se voltaram resetados
+    if (categoriaSelect.value !== estadoFiltro.categoria) {
+      categoriaSelect.value = estadoFiltro.categoria;
+    }
+    if (nivelSelect.value !== estadoFiltro.nivel) {
+      nivelSelect.value = estadoFiltro.nivel;
+    }
+
+    const categoria = estadoFiltro.categoria;
+    const nivel = estadoFiltro.nivel;
 
     document.querySelectorAll(".curso-card").forEach((card) => {
       const categorias = (card.dataset.categoria || "").split(" ");
@@ -16,20 +32,24 @@
 
       const matchCategoria = !categoria || categorias.includes(categoria);
       const matchNivel = !nivel || nivel === cardNivel;
+      const visivel = matchCategoria && matchNivel;
 
-      card.classList.toggle("hidden", !(matchCategoria && matchNivel));
+      // Sem depender de classe .hidden (não existe no CSS).
+      card.style.display = visivel ? "" : "none";
     });
   }
 
   // Delegação: captura o "change" no document.
-  // Funciona mesmo depois que os <select> são recriados,
-  // porque o listener está no document, não nos selects.
+  // Funciona mesmo depois que os <select> são recriados.
   document.addEventListener("change", (e) => {
     const target = e.target;
-    if (
-      target &&
-      (target.id === "categoria" || target.id === "nivel")
-    ) {
+    if (!target) return;
+
+    if (target.id === "categoria") {
+      estadoFiltro.categoria = target.value;
+      filtrarCursos();
+    } else if (target.id === "nivel") {
+      estadoFiltro.nivel = target.value;
       filtrarCursos();
     }
   });
@@ -37,7 +57,11 @@
   // Reaplica os filtros quando a listagem volta a aparecer
   // (depois de fechar a página de detalhe).
   function tentarAplicar() {
-    if (document.getElementById("categoria") && document.getElementById("nivel")) {
+    if (
+      document.getElementById("categoria") &&
+      document.getElementById("nivel") &&
+      document.querySelector(".curso-card")
+    ) {
       filtrarCursos();
     }
   }
@@ -48,7 +72,7 @@
     const main = document.querySelector("main");
     if (!main) return;
 
-    // Observa o main; usa debounce pra evitar disparos em rajada
+    // Observa o main; debounce para evitar disparos em rajada
     // durante a substituição de innerHTML.
     let pending = false;
     const observer = new MutationObserver(() => {

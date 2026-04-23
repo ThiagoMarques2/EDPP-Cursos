@@ -8,12 +8,13 @@
   border-radius: 16px;
   padding: 0;
   width: 100%;
-  max-width: 720px;
+  max-width: min(960px, 94vw);
   max-height: 90vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   position: relative;
+  box-sizing: border-box;
 }
 
 .discussao-modal-header {
@@ -188,8 +189,106 @@
   font-weight: 500;
 }
 
-@media (max-width: 600px) {
+/* ===========================================================
+   RESPONSIVIDADE MOBILE — modal cobre 95% da largura
+   =========================================================== */
+@media (max-width: 768px) {
+  .modal-discussao {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .modal-discussao .discussao-conteudo,
+  .discussao-conteudo {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    margin: 0 auto;
+    max-height: 92vh;
+    border-radius: 16px;
+    animation: aparecerModal 0.3s ease-out;
+  }
+  @keyframes aparecerModal {
+    from { opacity: 0; transform: scale(0.96); }
+    to   { opacity: 1; transform: scale(1); }
+  }
   .discussao-modal-header { padding: 22px 20px 16px; }
-  .comentarios-secao { padding: 18px 20px 24px; }
-  .discussao-modal-titulo { font-size: 1.1rem; }
+  .discussao-modal-fechar { top: 12px; right: 12px; font-size: 1.5rem; padding: 6px 12px; }
+  .discussao-modal-autor { gap: 10px; margin-bottom: 12px; }
+  .discussao-modal-autor .discussao-avatar { width: 38px; height: 38px; }
+  .discussao-modal-titulo { font-size: 1.1rem; line-height: 1.35; margin-bottom: 8px; padding-right: 32px; }
+  .discussao-modal-texto { font-size: 0.9rem; margin-bottom: 12px; }
+  .discussao-modal-meta { gap: 12px; font-size: 0.72rem; flex-wrap: wrap; }
+  .comentarios-secao { padding: 18px 16px 24px; }
+  .comentarios-titulo { font-size: 0.9rem; margin-bottom: 14px; }
+  .comentarios-lista { gap: 12px; }
+  .comentario-item { padding: 12px 14px; gap: 10px; border-radius: 10px; }
+  .comentario-avatar { width: 32px; height: 32px; font-size: 0.72rem; }
+  .comentario-cabecalho { gap: 6px; margin-bottom: 3px; }
+  .comentario-nome { font-size: 0.8rem; }
+  .comentario-tempo { font-size: 0.68rem; }
+  .comentario-texto { font-size: 0.82rem; line-height: 1.5; }
+  .comentario-acoes { gap: 12px; font-size: 0.72rem; }
+  .carregando-mais { padding: 22px 12px 8px; }
+  .carregando-spinner { width: 28px; height: 28px; border-width: 2.5px; }
+  .carregando-texto { font-size: 0.75rem; }
+}
+
+@media (max-width: 480px) {
+  .modal-discussao {
+    overflow-x: hidden;
+  }
+  .modal-discussao .discussao-conteudo,
+  .discussao-conteudo {
+    width: calc(100% - 16px) !important;
+    max-width: calc(100% - 16px) !important;
+    margin: 0 auto;
+    max-height: 92vh;
+    height: auto;
+    border-radius: 16px;
+  }
+  .discussao-modal-header { padding: 18px 16px 14px; }
+  .discussao-modal-titulo { font-size: 1rem; }
+  .discussao-modal-texto { font-size: 0.85rem; }
+  .comentarios-secao { padding: 16px 14px 24px; }
+  .comentario-item { padding: 10px 12px; gap: 8px; }
+  .comentario-avatar { width: 30px; height: 30px; font-size: 0.68rem; }
+  .comentario-texto { font-size: 0.8rem; }
+  .comentario-acoes { gap: 10px; flex-wrap: wrap; }
+}
+
+@media (max-width: 360px) {
+  .discussao-modal-header { padding: 16px 12px 12px; }
+  .comentarios-secao { padding: 14px 12px 22px; }
+  .discussao-modal-titulo { font-size: 0.95rem; padding-right: 28px; }
+  .comentario-cabecalho { flex-direction: column; align-items: flex-start; gap: 2px; }
+}
+
+/* ===========================================================
+   MODAL ENCORPADO EM DESKTOP
+   =========================================================== */
+@media (min-width: 769px) {
+  .modal-discussao .discussao-conteudo,
+  .discussao-conteudo {
+    max-width: min(960px, 94vw) !important;
+    width: 92vw !important;
+  }
+  .discussao-modal-header { padding: 32px 40px 24px; }
+  .comentarios-secao      { padding: 28px 40px 36px; }
+  .discussao-modal-titulo { font-size: 1.5rem; }
+  .discussao-modal-texto  { font-size: 1rem; }
+  .comentario-item        { padding: 16px 18px; }
+}
+
+@media (min-width: 1200px) {
+  .modal-discussao .discussao-conteudo,
+  .discussao-conteudo {
+    max-width: 1040px !important;
+    width: 88vw !important;
+  }
+  .discussao-modal-header { padding: 36px 48px 28px; }
+  .comentarios-secao      { padding: 32px 48px 40px; }
 }
