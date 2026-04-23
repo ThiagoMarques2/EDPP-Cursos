@@ -353,49 +353,106 @@
     }
 
     /*  Footer  */
-    footer {
-        background: var(--footer-bg);
-        text-align: center;
-        padding: 40px 24px;
-    }
+   
+.rodape {
+  background: #1a1f36;
+  color: #c0c5d0;
+  padding: 64px 24px 0;
+}
 
-    .social-title {
-        font-size: 0.85rem;
-        font-weight: 600;
-        color: var(--footer-text);
-        margin-bottom: 16px;
-    }
+.rodape-interno {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-        margin-bottom: 24px;
-    }
+.rodape-grade {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
 
-    .social-icons a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: rgba(255,255,255,0.08);
-        color: var(--footer-text);
-        transition: background 0.2s, color 0.2s;
-    }
+.rodape-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
 
-    .social-icons a:hover {
-        background: var(--primary);
-        color: var(--text);
-    }
+.rodape-logo span { color: var(--secundario); }
 
-    .copyright {
-        font-size: 0.78rem;
-        color: var(--footer-text);
-        opacity: 0.6;
-    }
+.rodape-desc {
+  font-size: 0.85rem;
+  color: #8892a4;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
 
+.rodape-titulo-col {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.rodape-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rodape-links a {
+  font-size: 0.875rem;
+  color: #8892a4;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.rodape-links a:hover { color: var(--secundario); }
+
+.rodape__redes {
+  display: flex;
+  gap: 10px;
+}
+
+.rodape__redes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.07);
+  color: #8892a4;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.rodape__redes a:hover {
+  background: var(--secundario);
+  color: #1a1f36;
+}
+
+.rodape-base {
+  padding: 24px 0;
+  font-size: 0.78rem;
+  color: #8892a4;
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .rodape-grade { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .rodape-grade { grid-template-columns: 1fr; gap: 32px; }
+}
     /* ===== Responsive ===== */
     @media (max-width: 900px) {
         .cursos-grid {

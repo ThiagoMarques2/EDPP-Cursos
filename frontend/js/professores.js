@@ -14,7 +14,9 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
-            { icone:'@', label:'Lattes', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     maria: {
@@ -32,6 +34,8 @@ const professores = {
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
             { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     carlos: {
@@ -48,7 +52,9 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
-            { icone:'be', label:'Behance', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     ana: {
@@ -65,7 +71,9 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
             { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     roberto: {
@@ -82,7 +90,9 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
-            { icone:'@', label:'Lattes', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     fernanda: {
@@ -99,6 +109,8 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
             { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
@@ -117,6 +129,8 @@ const professores = {
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
             { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     beatriz: {
@@ -133,7 +147,9 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
-            { icone:'be', label:'Behance', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     rafael: {
@@ -150,7 +166,9 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
             { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     camila: {
@@ -166,7 +184,9 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
-            { icone:'@', label:'Lattes', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     diego: {
@@ -184,6 +204,8 @@ const professores = {
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
             { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     priya: {
@@ -201,6 +223,8 @@ const professores = {
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
             { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     marcos: {
@@ -217,6 +241,8 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
             { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
@@ -234,7 +260,9 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
             { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     eduardo: {
@@ -250,7 +278,9 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
-            { icone:'@', label:'Lattes', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     tatiane: {
@@ -267,7 +297,9 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
             { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     bruno: {
@@ -285,6 +317,8 @@ const professores = {
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
             { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     larissa: {
@@ -300,7 +334,9 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
-            { icone:'be', label:'Behance', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     henrique: {
@@ -318,6 +354,8 @@ const professores = {
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
             { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
+            { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
     vanessa: {
@@ -333,6 +371,8 @@ const professores = {
         ],
         redes: [
             { icone:'in', label:'LinkedIn', url:'#' },
+            { icone:'gh', label:'GitHub', url:'#' },
+            { icone:'ig', label:'Instagram', url:'#' },
             { icone:'yt', label:'YouTube', url:'#' },
         ],
     },
@@ -457,9 +497,7 @@ function abrirDrawer(id) {
             <p class="drawer-secao-titulo">Encontre online</p>
             <menu class="drawer-redes">
                 ${p.redes.map(r => `
-                    <li><a href="${r.url}" class="drawer-rede" target="_blank">
-                        <span>${r.icone}</span> ${r.label}
-                    </a></li>`).join('')}
+                    <li><a href="${r.url}" class="drawer-rede" target="_blank">${r.label}</a></li>`).join('')}
             </menu>
         </section>`;
 
