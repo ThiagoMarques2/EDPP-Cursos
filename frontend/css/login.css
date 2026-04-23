@@ -208,6 +208,25 @@ body {
 .auth-painel.oculto { display: none; }
 
 
+.btn-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cinza);
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-voltar:hover {
+  background: #f0f1f3;
+  color: var(--primario);
+}
+
+
 /* HEADER */
 .form-header { margin-bottom: 28px; }
 

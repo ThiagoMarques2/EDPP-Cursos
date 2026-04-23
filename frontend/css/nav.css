@@ -1,0 +1,177 @@
+/* =============================================
+   NAV COMPARTILHADO — idêntico ao index.html
+   ============================================= */
+
+.site-header {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 16px 0;
+}
+
+.header-nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2d3436;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+.logo span { color: #f5c518; }
+
+.links-nav {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.links-nav a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #7f8c8d;
+  transition: color 0.2s;
+  padding-bottom: 4px;
+}
+.links-nav a:hover,
+.links-nav a.ativo {
+  color: #2d3436;
+  border-bottom: 2px solid #f5c518;
+}
+
+.acoes-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-pesquisa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #7f8c8d;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-pesquisa:hover { background: #f0f1f3; color: #2d3436; }
+
+.btn-acao {
+  background: #f5c518;
+  color: #2d3436;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  text-decoration: none;
+  display: inline-block;
+  font-family: inherit;
+  height: 40px;
+  line-height: 1;
+}
+.btn-acao:hover {
+  background: #e0b000;
+  transform: translateY(-1px);
+}
+
+/* Hamburguer */
+.btn-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 1.5px solid #e5e7eb;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+.btn-menu:hover {
+  background: #fffbea;
+  border-color: #f5c518;
+}
+.btn-menu .linha {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #2d3436;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.2s ease, width 0.3s ease;
+}
+.btn-menu .linha-2 { width: 14px; }
+.btn-menu:hover .linha-2 { width: 20px; }
+.btn-menu.aberto .linha-1 { transform: translateY(7px) rotate(45deg); }
+.btn-menu.aberto .linha-2 { opacity: 0; width: 20px; }
+.btn-menu.aberto .linha-3 { transform: translateY(-7px) rotate(-45deg); }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .btn-menu { display: flex; }
+  .header-nav { padding: 0 20px; }
+
+  .links-nav {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    z-index: 999;
+    padding: 8px 0;
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .links-nav.aberto {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+  .links-nav li { border-bottom: 1px solid #f0f1f3; }
+  .links-nav a {
+    display: block;
+    padding: 14px 24px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #2d3436;
+    border-bottom: none;
+  }
+  .links-nav a:hover,
+  .links-nav a.ativo {
+    border-bottom: none;
+    background: #fffbea;
+    color: #1a1a4e;
+    border-left: 3px solid #f5c518;
+    padding-left: 21px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-acao { padding: 8px 14px; font-size: 0.8rem; }
+}

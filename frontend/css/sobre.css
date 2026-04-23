@@ -27,118 +27,69 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ===== CABEÇALHO ===== */
-.site-header {
-  background: #ffffff;
-  box-shadow: var(--sombra-p);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 16px 0;
-}
-
-.header-nav {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--escuro);
-  text-decoration: none;
-  letter-spacing: -0.5px;
-}
-
-.logo span { color: var(--secundario); }
-
-.links-nav {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-}
-
-.links-nav a {
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--cinza);
-  transition: color 0.2s;
-  padding-bottom: 4px;
-}
-
-.links-nav a:hover,
-.links-nav a.ativo {
-  color: var(--escuro);
-  border-bottom: 2px solid var(--secundario);
-}
-
-.acoes-header { display: flex; gap: 12px; align-items: center; }
-
-.btn-pesquisa, .btn-carrinho {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 10px;
-  background: transparent;
-  color: var(--cinza);
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.btn-pesquisa:hover, .btn-carrinho:hover { background: #f0f1f3; color: var(--escuro); }
-
-.btn-acao {
-  background: var(--secundario);
-  color: var(--escuro);
-  border: 1px solid var(--secundario);
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
-  font-family: inherit;
-}
-
-.btn-acao:hover { background: var(--secundario-escuro); transform: translateY(-1px); }
-
 /* ===== HERO ===== */
-.sobre-hero {
-  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
-  padding: 80px 0;
+.prof-hero {
+  background: linear-gradient(135deg, #1a1a4e 0%, #0f0f2e 100%);
+  padding: 72px 24px 80px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
-
-.sobre-hero-interno {
-  max-width: 700px;
+.prof-hero::before {
+  content: '';
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: rgba(242,201,76,0.05);
+  top: -200px; right: -150px;
+  pointer-events: none;
+}
+.prof-hero::after {
+  content: '';
+  position: absolute;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  background: rgba(74,108,247,0.06);
+  bottom: -150px; left: -100px;
+  pointer-events: none;
+}
+.prof-hero-interno {
+  max-width: 640px;
   margin: 0 auto;
-  padding: 0 32px;
+  position: relative;
+  z-index: 1;
 }
-
-.sobre-hero h1 {
+.prof-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(242,201,76,0.12);
+  border: 1px solid rgba(242,201,76,0.3);
+  color: #F2C94C;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+.prof-hero h1 {
   font-size: 3rem;
   font-weight: 900;
-  color: var(--escuro);
-  margin-bottom: 16px;
+  color: #ffffff;
   letter-spacing: -0.02em;
   line-height: 1.1;
+  margin-bottom: 16px;
 }
-
-.sobre-hero h1 span { color: #F2C94C; }
-
-.sobre-hero p {
-  font-size: 1.1rem;
-  color: #4F4F4F;
+.prof-hero h1 span { color: #F2C94C; }
+.prof-hero p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.7);
   line-height: 1.7;
+  margin-bottom: 0;
 }
+
+/* ===== CABEÇALHO — estilos de nav no nav.css ===== */
 
 /* ===== COMPARTILHADO ===== */
 .secao-interna {
@@ -380,45 +331,107 @@ body {
 }
 
 /* ===== RODAPÉ ===== */
+
 .rodape {
   background: #1a1f36;
   color: #c0c5d0;
-  padding: 40px 24px;
-  text-align: center;
+  padding: 64px 24px 0;
 }
 
-.rodape-interno { max-width: 1280px; margin: 0 auto; }
+.rodape-interno {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
-.titulo-redes {
+.rodape-grade {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.rodape-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.rodape-logo span { color: var(--secundario); }
+
+.rodape-desc {
   font-size: 0.85rem;
-  font-weight: 600;
-  color: #c0c5d0;
+  color: #8892a4;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.rodape-titulo-col {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
   margin-bottom: 16px;
 }
 
+.rodape-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rodape-links a {
+  font-size: 0.875rem;
+  color: #8892a4;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.rodape-links a:hover { color: var(--secundario); }
+
 .rodape__redes {
   display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 24px;
+  gap: 10px;
 }
 
 .rodape__redes a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.08);
-  color: #c0c5d0;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.07);
+  color: #8892a4;
   transition: background 0.2s, color 0.2s;
   text-decoration: none;
 }
 
-.rodape__redes a:hover { background: var(--secundario); color: #1a1f36; }
+.rodape__redes a:hover {
+  background: var(--secundario);
+  color: #1a1f36;
+}
 
-.rodape__base { font-size: 0.78rem; color: #c0c5d0; opacity: 0.6; }
+.rodape-base {
+  padding: 24px 0;
+  font-size: 0.78rem;
+  color: #8892a4;
+  opacity: 0.7;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .rodape-grade { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .rodape-grade { grid-template-columns: 1fr; gap: 32px; }
+}
 
 /* ===== MODAL ===== */
 .modal {
@@ -495,6 +508,5 @@ body {
 @media (max-width: 600px) {
   .triade-grade, .equipe-grade, .numeros-grade { grid-template-columns: 1fr; }
   .sobre-hero h1 { font-size: 2rem; }
-  .links-nav { display: none; }
   .header-nav, .secao-interna, .sobre-hero-interno, .historia-interna { padding: 0 20px; }
 }
