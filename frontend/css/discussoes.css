@@ -292,3 +292,10 @@
   .discussao-modal-header { padding: 36px 48px 28px; }
   .comentarios-secao      { padding: 32px 48px 40px; }
 }
+
+@media (max-width: 900px) {
+  .rodape-grade { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .rodape-grade { grid-template-columns: 1fr; gap: 32px; }
+}
